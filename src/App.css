@@ -1,0 +1,67 @@
+/* Import all of Bootstrap's CSS */
+/* @import "bootstrap/scss/bootstrap"; */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(22, 45, 59, 0.836);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+.logo {
+  height: 5em;
+  will-change: filter;
+  transition: filter 300ms;
+  display: block;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    0deg,
+    rgba(253, 254, 254, 0.029) 0%,
+    rgba(255, 255, 255, 0.7) 0%
+  );
+  padding: 2vh 25px 10px;
+  position: fixed;
+  top: 0;
+  width: 97vw;
+  z-index: 10;
+  transition-duration: 1s;
+}
+
+.navbar__navlinks {
+  text-decoration: none;
+  color: rgb(0, 38, 88);
+  padding: 0 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar__navlinks:hover {
+  color: white;
+}
+
+/* ---------- END NAVBAR ---------- */
+
+/* Home */
+
+.homeContainer{
+  padding: 4em;
+}
+
+.cardsContainer1{
+  display: flex;
+}
+
+.cardContainer2{
+  width: 25rem;
+  font-size: 1em;
+}
+
+
