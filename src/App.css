@@ -1,5 +1,5 @@
 /* Import all of Bootstrap's CSS */
-/* @import "bootstrap/scss/bootstrap"; */
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 body {
   margin: 0;
@@ -7,10 +7,14 @@ body {
   background-color: rgba(22, 45, 59, 0.836);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
+  background-image: url("./public/garrafa-coresClaroSemRuido.jpg");
+  background-size: cover;
+  text-rendering: optimizeLegibility;
+  
 }
 
 .logo {
-  height: 5em;
+  height: 4em;
   will-change: filter;
   transition: filter 300ms;
   display: block;
@@ -21,16 +25,17 @@ body {
 
 .navbar {
   display: flex;
+  
   justify-content: space-between;
   background: linear-gradient(
     0deg,
     rgba(253, 254, 254, 0.029) 0%,
-    rgba(255, 255, 255, 0.7) 0%
+    rgba(255, 255, 255, 0.9) 0%
   );
   padding: 2vh 25px 10px;
-  position: fixed;
+  position:absolute;
   top: 0;
-  width: 97vw;
+  width: 99vw;
   z-index: 10;
   transition-duration: 1s;
 }
@@ -52,16 +57,39 @@ body {
 /* Home */
 
 .homeContainer{
-  padding: 4em;
+  padding: 5em;
+  color: rgb(0, 38, 88);
+  margin-top:10%;
+  font-size: 10px ;
+  background-image: "/public/garrafa-coresClaro.jpg";
+  width: 100vw;
+}
+
+.homeContainer h3{
+  font-size: 1.5em;
+  margin-right: 50vw; 
 }
 
 .cardsContainer1{
   display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin-right:150vw
 }
 
 .cardContainer2{
-  width: 25rem;
+  width: 33vw;
   font-size: 1em;
+  margin: auto;
+}
+.cardContainer2 h2{
+  font-size: 1.5em;
 }
 
+body{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
 

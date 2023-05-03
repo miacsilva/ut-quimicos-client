@@ -18,7 +18,7 @@ function Navbar() {
               })
             }
           >
-            <img className="logo" src="/public/ut-log-enhanced-noBg.png" alt="UT Químicos logotipo" />
+            <img className="logo" src="/ut-log-enhanced-noBg.png" alt="UT Químicos logotipo" />
         
           </NavLink>
           

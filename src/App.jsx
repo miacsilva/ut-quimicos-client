@@ -11,8 +11,7 @@ import Home from "./pages/Home";
 /* CSS */
 import './App.css'
 
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+
 
 function App() {
   

@@ -1,3 +1,6 @@
+import {Button, Card} from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
+
 function Home() {
   return (
     <>
@@ -19,16 +22,38 @@ function Home() {
 
         <div className="cardsContainer1">
           <div className="cardContainer2">
-            <h2>- Privilegiar/personalizar serviços e necessidades dos clientes</h2>
+            <h2>- Privilegiar/personalizar serviços e necessidades dos clientes.</h2>
+            <h2>-Fidelizar clientes e fornecedores.</h2>
+            <h2>-Estabelecer permanente contacto e
+          relacionamento a longo prazo entre clientes e fornecedores.</h2>
+          </div>
+          {/* <div className="cardContainer2">
+          <h2>-Fidelizar clientes e fornecedores.</h2>
           </div>
           <div className="cardContainer2">
-          <h2>Fidelizar clientes e fornecedores</h2>
-          </div>
-          <div className="cardContainer2">
-          <h2>Estabelecer permanente contacto e
-          relacionamento a longo prazo entre clientes e fornecedores</h2>
-          </div>
+          <h2>-Estabelecer permanente contacto e
+          relacionamento a longo prazo entre clientes e fornecedores.</h2>
+          </div> */}
         </div>
+
+        <Card style={{width: "18rem"}}> 
+        <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="card-link">Card link</a>
+    <a href="#" className="card-link">Another link</a> </div>
+</Card>
+        <Button>isto é um botão</Button>
+
+ {/*  <div className="card" style="width: 18rem;">
+  <img src="..." className="card-img-top" alt="..."/>
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div> */}
       </div>
     </>
   );
