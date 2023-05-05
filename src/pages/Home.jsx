@@ -1,12 +1,10 @@
-import {Button, Card} from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import jars from "/public/garrafasColoridasSemBGquadrado.png";
 
 function Home() {
   return (
     <>
-      <div>
-
+      
       <section  className="homeContainer">
         <h3>
           Criada em 2008, a <strong>U. T. Químicos, Lda</strong> é uma empresa de distribuição de
@@ -30,11 +28,6 @@ function Home() {
 
       <img src={jars} alt="Fracos Pigmentados" className="jarImg"/>
       </section>
-        <div className="cardsContainer1">
-            <h2></h2>
-            <h2></h2>
-          </div>
-      </div>
 
     </>
   );

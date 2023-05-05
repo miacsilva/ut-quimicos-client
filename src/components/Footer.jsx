@@ -1,5 +1,4 @@
-import React from "react";
-import logoFooter from "/public/ut-miniLogo-noBg.png"
+import logoFooter from "/ut-miniLogo-noBg.png"
 
 function Footer() {
   return (

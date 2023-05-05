@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 
 /* Pages */
 import Home from "./pages/Home";
+import Produtos from "./pages/Produtos";
 
 
 /* CSS */
@@ -24,8 +25,10 @@ function App() {
 
       <Routes>
       <Route path="/" element={<Home />} />
-
+      <Route path="/produtos" element={<Produtos />} />
       </Routes>
+
+      
       <Footer/>
 
      

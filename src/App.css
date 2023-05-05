@@ -10,15 +10,13 @@
 
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: rgba(22, 45, 59, 0.836);
+ /*  margin: 0;
+  padding: 0; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
   text-rendering: optimizeLegibility;
   width: 100vw;
   background-color: rgba(93, 193, 224, 0.503);
-  background-size: cover;
 }
 
 .logo {
@@ -102,19 +100,94 @@ body {
   height: auto;
 }
 
+/* ---- Produtos Parallax efexr ---------*/
+ .Produtos{
+  height: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 1.8em;
+  color:rgba(22, 45, 59, 0.836);
+ }
+
+ .productsImg1, .productsImg2, .productsImg3{
+  position: relative;
+  opacity: 0.70;
+  background-position: 0rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
+ .productsImg1{
+  background-image: url("/public/tubosDeEnsaio.jpg");
+  min-height: 100vh;
+  background-size: cover;
+ }
+ .productsImg2{
+  background-image: url("/public/Brochura.jpg");
+  min-height: 40vh;
+  background-size: cover;
+ }
+ .productsImg3{
+  background-image: url("/public/pigmentoPo.jpg");
+  min-height: 40vh;
+  background-size: cover;
+ }
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light{
+  background-color:rgba(93, 193, 224, 0.503) ;
+}
+.section-dark{
+  background-color:rgba(22, 45, 59, 0.836); 
+  color:rgba(93, 193, 224, 0.503);
+}
+
+.productsText{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 200%;
+}
+
+.productsText .border{
+  background-color: rgba(22, 45, 59);;
+  color: white;
+  padding: 1.5%;
+}
+
+#transp{
+  background-color: transparent;
+}
+
+/* ---- Produtos Parallax efexr--END----------*/
+
+
+
+
+
+
+
 /* ----------------- Footer --------------------*/
 
 .footer{
+  width: 100%;
   border: 1px solid white;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+ /*  justify-content: center; */
   align-items: center;
   background-color:rgba(22, 45, 59, 0.836);
-  padding-top: 3%;
-  padding-right: 4%;
-  padding-left: 4%;
+  padding: 0 4%;
+  padding-top: 2%;
 }
 
 .footerLinksLogo img{
