@@ -16,9 +16,9 @@ function Home() {
           <br />
 
 
-            <h4>🧪 Privilegiar/personalizar serviços e necessidades dos clientes.</h4>
-            <h4>🧑‍💼 Fidelizar clientes e fornecedores.</h4>
-            <h4>🤝 Estabelecer permanente contacto e
+            <h4>➤ Privilegiar/personalizar serviços e necessidades dos clientes.</h4>
+            <h4>➤ Fidelizar clientes e fornecedores.</h4>
+            <h4>➤ Estabelecer permanente contacto e
           relacionamento a longo prazo entre clientes e fornecedores.</h4>
 
           <br />

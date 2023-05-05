@@ -102,7 +102,7 @@ body {
   height: auto;
 }
 
-/* ------- Footer -------*/
+/* ----------------- Footer --------------------*/
 
 .footer{
   border: 1px solid white;
@@ -112,11 +112,14 @@ body {
   justify-content: center;
   align-items: center;
   background-color:rgba(22, 45, 59, 0.836);
-  padding: 4%;
+  padding-top: 3%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
 .footerLinksLogo img{
   height: 15vh;
+  margin-left: 100%;
 }
 
 .footerLinks{
@@ -130,10 +133,18 @@ body {
 }
 
 
-.footerLinksColunas{
+.footerLinksColunasProd{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin-right: 10%;
+}
+.footerLinksColunasCont{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 10%;
+  
 }
 
 .footerLinksColunas h4{
@@ -145,19 +156,61 @@ body {
 .footerLinksColunas p{
   font-size: 12px;
   line-height: 14px;
+  margin: 0.5rem 0;
+  cursor: pointer;
   
 }
 
-
-
-
-.barContainerFooter{
-  padding:40px;
+.footerCopyright{
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
 }
+
+.footerCopyright p{
+  font-size: 10px;
+  line-height: 10px;
+}
+
 
 .barContainerFooter hr{
   border: 10px solid black ;
   border-radius: 5px;
 }
 
-/* 3:09:50sg no video */
+/* media queries FOOTER */
+@media  (max-width: 550px) {
+  .footerLinksColunas{
+      margin: 1rem 0;
+  }
+  .footerLinksColunasProd h4{
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 10%;
+  }
+  .footerLinksColunasProd p{
+      font-size: 12px;
+      line-height: 15px;
+  }
+  .footerLinksColunasCont h4{
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 10%;
+  }
+  .footerLinksColunasCont p{
+      font-size: 12px;
+      line-height: 15px;
+  }
+  .footerLinks{
+    flex-direction: column;
+  }
+
+  .footerLinksLogo img{
+    height: 20vh;
+    margin-left: 100%;
+    margin: 20px;
+  }
+}
+
+
+/* ----------------- Footer END--------------------*/
