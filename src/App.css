@@ -10,17 +10,20 @@
 
 
 body {
- /*  margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
   text-rendering: optimizeLegibility;
   width: 100vw;
-  background-color: rgba(93, 193, 224, 0.503);
+  background-color: #27c3f2a2;
+  overflow-x: hidden; /* corrigir isto */
 }
 
+/* --------NAVBAR--------------------- */
+
 .logo {
-  height: 5em;
+  height: 6em;
   will-change: filter;
   transition: filter 300ms;
   display: block;
@@ -34,34 +37,102 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(
+  background-image: url("/public/background-navbar.jpg");
+  background-size: cover;
+  /* background: linear-gradient(
     0deg,
-    rgba(253, 254, 254, 0.029) 0%,
+    rgba(210, 246, 246, 0.9) 100%,
     rgba(255, 255, 255, 0.9) 100%
-  );
-  padding: 0vh 20px 10px;
-  position:absolute;
-  top: 0;
-  width: 100vw;
-  z-index: 10;
-  transition-duration: 1s;
+  ); */ /*  */
+  align-items: center;
+/*   padding: 0vh 20px 10px; */
+/*   width: 100vw; */
 }
 
-.navbar__navlinks {
+.navbar-navlinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-navlinks li {
+  list-style: none;
+} 
+
+.navbar-navlinks li a {
   text-decoration: none;
-  color: rgb(0, 38, 88);
-  padding: 0 10px;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(22, 45, 59, 0.836);
+  padding: 0.8rem;
+  display: block;
 }
 
-.navbar__navlinks:hover {
-  color: white;
+.nav-contactos{
+  margin-right: 30px;
+}
+
+
+.navbar-navlinks {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.navbar-navlinks li a:hover {
+  color: rgb(153, 148, 148);
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color:rgba(22, 45, 59, 0.836);
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-navlinks {
+  display: none;
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar-navlinks ul {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar-navlinks li {
+    text-align: left;
+  }
+  .navbar-navlinks li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-navlinks.active {
+    display: flex;
+  }
+
 }
 
 /* ---------- END NAVBAR ---------- */
 
-/* Home */
+/* ----------- Home ------------------*/
 
 .homeContainer{
   width: 100%;
@@ -119,17 +190,17 @@ body {
   background-attachment: fixed;
  }
  .productsImg1{
-  background-image: url("/public/tubosDeEnsaio.jpg");
+  background-image: url("/tubosDeEnsaio.jpg");
   min-height: 100vh;
   background-size: cover;
  }
  .productsImg2{
-  background-image: url("/public/Brochura.jpg");
+  background-image: url("/Brochura.jpg");
   min-height: 40vh;
   background-size: cover;
  }
  .productsImg3{
-  background-image: url("/public/pigmentoPo.jpg");
+  background-image: url("/pigmentoPo.jpg");
   min-height: 40vh;
   background-size: cover;
  }
@@ -168,6 +239,52 @@ body {
 }
 
 /* ---- Produtos Parallax efexr--END----------*/
+
+/*-----------------Parceiros------------------  */
+
+header{
+width: 100vw;
+padding: 25vh 10vw 10vh 10vw;
+}
+header h1{
+  font-size: 700%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+width: 100vw;
+padding: 0 10vw;
+margin-bottom:10%;
+}
+
+.logo-container{
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid rgba(0, 0, 0, 0.348);
+  border-radius: 20px;
+  background: rgb(56,149,222);
+background: linear-gradient(0deg, rgba(56,149,222,1) 22%, rgba(136,165,213,1) 68%);
+}
+
+.parceiros-logo{
+  height: 20vh;
+  margin: 5vh 15vw;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------Parceiros END--------------- */
+
+
+
+
 
 
 

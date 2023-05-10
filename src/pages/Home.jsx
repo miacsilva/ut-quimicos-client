@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import jars from "/public/garrafasColoridasSemBGquadrado.png";
+import jars from "/garrafasColoridasSemBGquadrado.png";
 
 function Home() {
   return (

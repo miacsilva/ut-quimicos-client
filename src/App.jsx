@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 /* Pages */
 import Home from "./pages/Home";
 import Produtos from "./pages/Produtos";
+import Parceiros from "./pages/Parceiros";
 
 
 /* CSS */
@@ -20,12 +21,12 @@ function App() {
 
   return (
     <>
-
       <Navbar/>      
 
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/produtos" element={<Produtos />} />
+      <Route path="/parceiros" element={<Parceiros />} />
       </Routes>
 
       
