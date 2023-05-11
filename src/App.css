@@ -2,6 +2,13 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+
+/* CORES
+rgba(22, 45, 60, 0.835);
+
+*/
+
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +23,7 @@ body {
   font-size: 10px;
   text-rendering: optimizeLegibility;
   width: 100vw;
-  background-color: #27c3f2a2;
+  background: rgba(208, 227, 244, 0.849);
   overflow-x: hidden; /* corrigir isto */
 }
 
@@ -30,15 +37,15 @@ body {
   margin-left: 10vw;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.logo {
+filter: drop-shadow(0px 0px 50px  #FFFFFF)  brightness(170%);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-image: url("/public/background-navbar.jpg");
-  background-size: cover;
+  background-image: url("/public/footerBg.png");
+ background-size: cover;
   /* background: linear-gradient(
     0deg,
     rgba(210, 246, 246, 0.9) 100%,
@@ -61,7 +68,7 @@ body {
 
 .navbar-navlinks li a {
   text-decoration: none;
-  color: rgba(22, 45, 59, 0.836);
+  color: rgb(218, 216, 216);
   padding: 0.8rem;
   display: block;
 }
@@ -78,7 +85,7 @@ body {
 }
 
 .navbar-navlinks li a:hover {
-  color: rgb(153, 148, 148);
+  color:rgb(71, 119, 168);
 }
 
 .toggle-button {
@@ -136,11 +143,11 @@ body {
 
 .homeContainer{
   width: 100%;
-  margin: 30vh 0 30vh;
+  margin: 15vh 0 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: rgba(22, 45, 60, 0.835);
 }
 
 .homeContainer h3{
@@ -226,17 +233,28 @@ body {
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 200%;
+
 }
 
 .productsText .border{
   background-color: rgba(22, 45, 59);;
   color: white;
+  text-shadow: 1px 1px 0px #0D0D0D;
   padding: 1.5%;
 }
 
 #transp{
   background-color: transparent;
 }
+
+.arrow{
+  font-size: 50px;
+}
+
+.anchor{
+  color: #FFFFFF;
+}
+
 
 /* ---- Produtos Parallax efexr--END----------*/
 
@@ -254,7 +272,6 @@ header h1{
 section{
 width: 100vw;
 padding: 0 10vw;
-margin-bottom:10%;
 }
 
 .logo-container{
@@ -263,7 +280,7 @@ margin-bottom:10%;
   border: 4px solid rgba(0, 0, 0, 0.348);
   border-radius: 20px;
   background: rgb(56,149,222);
-background: linear-gradient(0deg, rgba(56,149,222,1) 22%, rgba(136,165,213,1) 68%);
+background:linear-gradient(#141e30, #243b55);
 }
 
 .parceiros-logo{
@@ -296,19 +313,20 @@ background: linear-gradient(0deg, rgba(56,149,222,1) 22%, rgba(136,165,213,1) 68
 
 .footer{
   width: 100%;
-  border: 1px solid white;
   color: white;
   display: flex;
   flex-direction: column;
  /*  justify-content: center; */
   align-items: center;
-  background-color:rgba(22, 45, 59, 0.836);
+ /*  background-color:#162d3bd5; */
+ background-image: url("/public/footerBg.png");
+ background-size: cover;
   padding: 0 4%;
   padding-top: 2%;
 }
 
 .footerLinksLogo img{
-  height: 15vh;
+  height: 25vh;
   margin-left: 100%;
 }
 

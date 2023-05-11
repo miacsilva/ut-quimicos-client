@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="brand-logo"> <img className="logo" src="/ut-log-enhanced-noBg.png" alt="UT Químicos logotipo"/> </div>
+      <div className="brand-logo"> <a href="/"><img className="logo" src="/ut-log-enhanced-noBg-white.png" alt="UT Químicos logotipo"/></a> </div>
        
         <a href="#" className={`toggle-button ${isActive ? "active" : ""}`} onClick={handleClick}>
           <span className="bar"></span>
@@ -20,11 +20,11 @@ function Navbar() {
      
       <div className={`navbar-navlinks ${isActive ? "active" : ""}`}>
             <ul>
-<li> <a href="#">Início</a></li>
-<li> <a href="#">Sobre</a></li>
-<li> <a href="#">Produtos</a></li>
-<li> <a href="#">Parceiros</a></li>
-<li > <a className="nav-contactos" href="#">Contactos</a></li>
+<li> <a href="/">Início</a></li>
+<li> <a href="/sobre">Sobre</a></li>
+<li> <a href="/produtos">Produtos</a></li>
+<li> <a href="/parceiros">Parceiros</a></li>
+<li > <a className="nav-contactos" href="/contactos">Contactos</a></li>
 
             </ul>
 
