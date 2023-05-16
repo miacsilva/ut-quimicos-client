@@ -355,10 +355,12 @@ background:linear-gradient(#141e30, #243b55);
   
 }
 
-.footerLinksColunas h4{
-  font-size: 14px;
+.footerLinksColunasCont h4,
+.footerLinksColunasProd h4
+{
+  font-size: 20px;
   line-height: 16px;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .footerLinksColunas p{
@@ -385,6 +387,67 @@ background:linear-gradient(#141e30, #243b55);
   border: 10px solid black ;
   border-radius: 5px;
 }
+
+
+/* ---------Message Form------------ */
+.containerForm{
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #121212; */
+  /* color: #FFF; */
+  padding: 14px;
+}
+
+.titleForm{
+  margin-bottom: 50px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.form{
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  margin-bottom: 14px;
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0 8px;
+}
+
+.textarea{
+  margin-bottom: 14px;
+  border-radius: 4px;
+  border: 0;
+  padding: 8px;
+  height: 94px;
+  resize: none;
+}
+
+.button{
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  background-color: #0fdbff;
+  font-size: 18px;
+  transition: background-color, transform 0.8s;
+}
+
+.button:hover{
+  background-color: #0fe3ff;
+  transform: scale(1.01);
+}
+
+/* ---------Message Form--END---------- */
+
 
 /* media queries FOOTER */
 @media  (max-width: 550px) {

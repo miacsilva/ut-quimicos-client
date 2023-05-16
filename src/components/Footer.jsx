@@ -20,7 +20,8 @@ function Footer() {
               </div>
               <div className="footerLinksColunasCont">
                   <h4>Contactos</h4>
-                  <p>Morada</p>
+                  <p>Travessa do Outeirinho, n.º 42 e 104 <br></br><br></br>
+     Apartado 139 4730-794 Vila Verde</p>
                   <p>+351 253324533 (chamada para rede fixa nacional)</p>
                   <p>geral@utquimicos.com</p>
                   <p>escritorio@utquimicos.com</p>
