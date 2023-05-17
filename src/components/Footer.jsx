@@ -9,7 +9,7 @@ function Footer() {
                 <img src={logoFooter} alt="Mini Logotipo UTQuímicos" />
               </div>
               <div className="footerLinksColunasProd">
-                  <h4>Aplicações</h4>
+                  <h4>Aplicações / Indústrias</h4>
                   <p>Tintas e Vernizes</p>
                   <p>Curtumes e Calçados</p>
                   <p>Plásticos</p>

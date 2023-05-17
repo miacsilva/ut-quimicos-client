@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
-/* CORES
-rgba(22, 45, 60, 0.835);
+.cores{
+color:rgba(22, 45, 60, 0.835);
 
-*/
+}
 
 
 * {
@@ -90,8 +90,8 @@ filter: drop-shadow(0px 0px 50px  #FFFFFF)  brightness(170%);
 
 .toggle-button {
   position: absolute;
-  top: .75rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 2rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -100,12 +100,12 @@ filter: drop-shadow(0px 0px 50px  #FFFFFF)  brightness(170%);
 }
 
 .toggle-button .bar{
-  height: 3px;
+  height: 4px;
   width: 100%;
-  background-color:rgba(22, 45, 59, 0.836);
+  background-color:rgba(208, 227, 244, 0.849);
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 950px) {
 
   .toggle-button{
     display: flex;
@@ -300,7 +300,12 @@ background:linear-gradient(#141e30, #243b55);
 /* ---------------Parceiros END--------------- */
 
 
+/* -------------Contactos------------------- */
 
+
+
+
+/* -------------Contactos END------------------- */
 
 
 
