@@ -18,7 +18,7 @@ function Navbar() {
           <span className="bar"></span>
         </a>
      
-      <div className={`navbar-navlinks ${isActive ? "active" : ""}`}>
+      <div className={`navbar-navlinks ${isActive ? "active" : ""}`} >
             <ul>
 <li> <a href="/">Início</a></li>
 <li> <a href="/sobre">Sobre</a></li>
