@@ -87,7 +87,7 @@ function Produtos() {
       </section>
 
 
-      <div className="productsImg3">
+      <div className="productsImg6">
         <div className="productsText">
           <span id="transp" className="border">Cortiça e Compósitos</span>
         </div>
@@ -104,7 +104,7 @@ function Produtos() {
       </section>
 
 
-      <div className="productsImg3">
+      <div className="productsImg7">
         <div className="productsText">
           <span id="transp" className="border">Detergentes e Cosmética</span>
         </div>
