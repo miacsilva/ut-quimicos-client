@@ -1,5 +1,11 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillHouseFill } from "react-icons/bs";
+import { BsEnvelopeAtFill } from "react-icons/bs";
+
+
+
 
 function Contactos() {
   return (
@@ -17,26 +23,28 @@ function Contactos() {
 
       <section className="contactos">
         <div className="contactosHardCoded">
+          
+          
           <div className="contactosTexto">
 
           <div className="contactosTextoGroup">
             <h5>Sede</h5>
-            <p>Travessa do Outeirinho, n.º 42 e 104</p>
-            <p>Apartado 139</p>
-            <p>4730-794 Vila Verde</p>
-            <p>+351 253 324 533 (Chamada para a rede fixa nacional)</p>
-            <p>geral@utquimicos.com</p>
+            <p><BsFillHouseFill/>  Travessa do Outeirinho, n.º 42 e 104</p>
+            <p>     Apartado 139</p>
+            <p>     4730-794 Vila Verde</p>
+            <p className="marginContacts"><BsFillTelephoneFill/> +351 253 324 533 (Chamada para a rede fixa nacional)</p>
+            <p className="marginContacts"><BsEnvelopeAtFill/> geral@utquimicos.com</p>
             </div>
 
-
+            
 
           
 
           <div className="contactosTextoGroup">
             <h5>Armazém</h5>
-            <p>Rua António Joaquim Campos Monteiro, nº 700</p>
-            <p>4780-165 Santo Tirso</p>
-            <p>+351 252 219 985 (Chamada para a rede fixa nacional)</p>
+            <p><BsFillHouseFill/>   Rua António Joaquim Campos Monteiro, nº 700</p>
+            <p>      4780-165 Santo Tirso</p>
+            <p  className="marginContacts"><BsFillTelephoneFill/> +351 252 219 985 (Chamada para a rede fixa nacional)</p>
             </div>
 
 
@@ -72,10 +80,10 @@ function Contactos() {
           </div>
         </div>
 
+      </section>
         <div className="Formulário">
           <ContactForm />
         </div>
-      </section>
     </div>
   );
 }
