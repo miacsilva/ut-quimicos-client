@@ -18,7 +18,7 @@ function Contactos() {
         
       </div>
 
-        <h2>Contactos</h2>
+        <h2>Contacte-nos</h2>
       </header>
 
       <section className="contactos">
