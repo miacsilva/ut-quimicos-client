@@ -14,7 +14,7 @@ function Produtos() {
       <section className="section section-inicial">
         <h2>Produtos para as aplicações nas mais diversas Indústrias</h2>
         <p>
-          Na U. T. Químicos comercializamos produtos para os mais diversos fins, incidindo maioritáriamente na distribuíção de químicos para as indústrias das Tintas e Vernizes, dos Curtumes e dos Plásticos, entre muitas outras. 
+          Na U. T. Químicos comercializamos produtos para os mais diversos fins, incidindo maioritáriamente na distribuíção de químicos para as indústrias das Tintas e Vernizes, dos Curtumes e dos Plásticos. 
         </p>
         <p className="arrow">
         ⇓

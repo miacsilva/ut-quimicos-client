@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'
 
 function ContactForm() {
   const [name, setName] = useState("");
@@ -21,6 +22,12 @@ function ContactForm() {
       if (name === "" || email === "" || subject === "" || message === "") {
         alert("Por favor, preencha os campos obrigatórios do formulário.");
         return;
+      }
+      else {
+        const Alert = () => {
+          Swal.fire("Mensagem enviada!"," " ,'success')
+        }
+        Alert ()
       }
       const templateParams = {
         from_name: name,
@@ -93,7 +100,7 @@ function ContactForm() {
           onChange={handleMessage}
           value={message}
         />
-
+<button>teste</button>
         <input className="button" type="submit" value="Enviar" />
       </form>
       

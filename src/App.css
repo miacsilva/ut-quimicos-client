@@ -66,6 +66,7 @@ body {
   color: rgb(218, 216, 216);
   padding: 1rem;
   display: block;
+  transition: 0.3s;
 }
 
 .navbar-navlinks li a:hover {
@@ -206,7 +207,7 @@ body {
 }
 .productsImg1 {
   background-image: url("/tubosDeEnsaio.jpg");
-  min-height: 100vh;
+  min-height: 89vh;
   background-size: cover;
 }
 .productsImg2 {
@@ -260,7 +261,7 @@ body {
   color: rgba(207, 224, 229, 0.851);
 }
 .section-dark {
-  background-image: url("/public/footerBg.png");
+  background-image: url("/footerBg.png");
   background-size: cover;
   color: rgba(93, 193, 224, 0.503);
 }
@@ -311,6 +312,42 @@ body {
 }
 
 /* ---- Produtos Parallax efexr--END----------*/
+
+
+
+/* ----------------Single Produts --------------------*/
+
+.singleProductHeader{
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.SP1{
+  background-image:URL("/Brochura.jpg");
+  background-attachment: fixed;
+}
+
+.singleProductHeader h1{
+  font-size: 5vw;
+  font-family: "Roboto";
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  color:  rgba(22, 45, 59);;
+}
+
+.singleProductBody{
+  background-image: url("/footerBg.png");
+  background-size: cover;
+  
+}
+
+
+
 
 /*-----------------Parceiros------------------  */
 
