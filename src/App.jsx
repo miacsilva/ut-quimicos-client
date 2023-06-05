@@ -14,9 +14,9 @@ import Curtumes from "./pages/Curtumes";
 import Plásticos from "./pages/Plásticos";
 import Papel from "./pages/Papel"
 import CorticaCompositos from "./pages/CorticaCompositos"
-/* import DetergentesCosmetica from "./pages/DetergentesCosmetica" */
+import DetergenteCosmetica from "./pages/DetergenteCosmetica"
 import Contactos from "./pages/Contactos";
-
+import OutrasIndustrias from "./pages/OutrasIndustrias";
 
 /* CSS */
 import './App.css'
@@ -38,8 +38,8 @@ function App() {
       <Route path="/produtos/plasticos" element={<Plásticos />} />
       <Route path="/produtos/papel" element={<Papel />} />
       <Route path="/produtos/cortica-compositos" element={<CorticaCompositos />} />
-{/*       <Route path="/produtos/detergentes-cosmetica" element={<DetergentesCosmetica />} /> */}
-      <Route path="/produtos/outrasIndustrias" element={<outrasIndustrias />} />
+      <Route path="/produtos/detergentes-cosmetica" element={<DetergenteCosmetica />} />
+      <Route path="/produtos/outras-industrias" element={<OutrasIndustrias />} />
       <Route path="/parceiros" element={<Parceiros />} />
       <Route path="/contactos" element={<Contactos />} />
       </Routes>

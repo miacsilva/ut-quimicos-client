@@ -12,6 +12,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 body {
@@ -41,7 +43,7 @@ body {
   justify-content: space-between;
   background-size: cover;
   align-items: center;
-  background-image: url("/public/footerBg.png");
+  background-image: url("/footerBg.png");
   /* background: linear-gradient(
     0deg,
     rgba(210, 246, 246, 0.9) 100%,
@@ -198,7 +200,8 @@ body {
 .productsImg4,
 .productsImg5,
 .productsImg6,
-.productsImg7 {
+.productsImg7, 
+.productsImg8 {
   position: relative;
   opacity: 0.7;
   background-position: 0rem;
@@ -241,6 +244,25 @@ body {
   min-height: 40vh;
   background-size: cover;
 }
+.productsImg8 {
+  background-image: url("/outrasIndustrias.jpg");
+  min-height: 40vh;
+  background-size: cover;
+}
+
+.scrollDown{
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 4rem;
+ /*  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);  */
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
 
 .section {
   text-align: center;
@@ -310,6 +332,11 @@ body {
     font-size: 140%;
   }
 }
+@media (max-width: 550px) {
+  .scrollDown{
+    display: none;
+  }
+}
 
 /* ---- Produtos Parallax efexr--END----------*/
 
@@ -331,6 +358,31 @@ body {
   background-image:URL("/Brochura.jpg");
   background-attachment: fixed;
 }
+.SP2{
+  background-image:URL("/curtumes.jpg");
+  background-attachment: fixed;
+}
+.SP3{
+  background-image:URL("/pigmentoPo_small_header.jpg");
+  background-attachment: fixed;
+}
+.SP4{
+  background-image:URL("/papel-colorido.jpg");
+  background-attachment: fixed;
+}
+.SP5{
+  background-image:URL("/cortica.png");
+  background-attachment: fixed;
+}
+.SP6{
+  background-image:URL("/detergente-cosmetica.jpg");
+  background-attachment: fixed;
+}
+.SP7{
+  background-image:URL("/outrasIndustrias.jpg");
+  background-attachment: fixed;
+}
+
 
 .singleProductHeader h1{
   font-size: 5vw;
@@ -343,10 +395,57 @@ body {
 .singleProductBody{
   background-image: url("/footerBg.png");
   background-size: cover;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   
 }
 
+.cardsProducts{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.cardsProducts{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.08);
+border-radius: 30px;
+border-top-left-radius: 0;
+border-bottom-right-radius: 0;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.1px);
+-webkit-backdrop-filter: blur(2.1px);
+padding: 20px;
+margin-bottom: 20px;
+color: rgba(201, 207, 211, 0.849);
+width: 60vw;
+transition: 0.5s;
+font-family: "Roboto"
+}
+
+.cardsProducts:hover{
+  color: rgb(253, 253, 253);
+  backdrop-filter: blur(10px);
+  width: 60.5vw;
+  height: max-content;
+  border: 1px solid rgba(255, 255, 255, 0.203);
+}
+
+.cardsProducts h2{
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+
+.cardsProducts li{
+list-style:none ;
+margin-bottom: 8px;
+font-size: 14px;
+
+}
 
 
 /*-----------------Parceiros------------------  */
@@ -494,7 +593,7 @@ section {
   /*  justify-content: center; */
   align-items: center;
   /*  background-color:#162d3bd5; */
-  background-image: url("/public/footerBg.png");
+  background-image: url("/footerBg.png");
   background-size: cover;
   padding: 0 4%;
   padding-top: 2%;
@@ -664,3 +763,4 @@ color:rgba(22, 45, 59); */
 }
 
 /* ----------------- Footer END--------------------*/
+

@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 function Produtos() {
   return (
@@ -9,6 +10,7 @@ function Produtos() {
         <div className="productsText">
           <span className="border">Produtos</span>
         </div>
+        <h5 className="scrollDown">Scroll Down</h5>
       </div>
       
       <section className="section section-inicial">
@@ -16,9 +18,9 @@ function Produtos() {
         <p>
           Na U. T. Químicos comercializamos produtos para os mais diversos fins, incidindo maioritáriamente na distribuíção de químicos para as indústrias das Tintas e Vernizes, dos Curtumes e dos Plásticos. 
         </p>
-        <p className="arrow">
+       {/*  <p className="arrow">
         ⇓
-        </p>
+        </p> */}
       </section>
 
       <div className="productsImg2">
@@ -39,7 +41,7 @@ function Produtos() {
 
       <div className="productsImg4">
         <div className="productsText">
-          <span id="transp" className="border">Curtumes e Calçados</span>
+          <span id="transp" className="border"><Link to="/produtos/curtumes" className="anchor">Curtumes e Calçados</Link></span>
         </div>
       </div>
 
@@ -55,12 +57,12 @@ function Produtos() {
 
       <div className="productsImg3">
         <div className="productsText">
-          <span id="transp" className="border">Plásticos</span>
+          <span id="transp" className="border"><a href="/produtos/plasticos">  Plásticos </a></span>
         </div>
       </div>
 
       <section className="section section-dark">
-        <h2>Section QUATRO- Plasticos  </h2>
+        <h2>Section QUATRO- Plásticos  </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
           quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
@@ -72,7 +74,7 @@ function Produtos() {
 
       <div className="productsImg5">
         <div className="productsText">
-          <span id="transp" className="border">Papel</span>
+          <span id="transp" className="border"><a href="/produtos/papel" className="anchor">Papel</a></span>
         </div>
       </div>
 
@@ -89,7 +91,7 @@ function Produtos() {
 
       <div className="productsImg6">
         <div className="productsText">
-          <span id="transp" className="border">Cortiça e Compósitos</span>
+          <span id="transp" className="border"><a href="/produtos/cortica-compositos" className="anchor">Cortiça e Compósitos </a></span>
         </div>
       </div>
 
@@ -106,7 +108,7 @@ function Produtos() {
 
       <div className="productsImg7">
         <div className="productsText">
-          <span id="transp" className="border">Detergentes e Cosmética</span>
+          <span id="transp" className="border"><a href="/produtos/detergentes-cosmetica" className="anchor">Detergentes e Cosmética</a></span>
         </div>
       </div>
 
@@ -121,9 +123,9 @@ function Produtos() {
       </section>
 
 
-      <div className="productsImg3">
+      <div className="productsImg8">
         <div className="productsText">
-          <span id="transp" className="border">Outras Indústrias</span>
+          <span id="transp" className="border"><a href="/produtos/outras-industrias">Outras Indústrias</a></span>
         </div>
       </div>
 

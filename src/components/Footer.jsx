@@ -1,4 +1,5 @@
 import logoFooter from "/ut-miniLogo-noBg.png"
+/* import { Link } from "react-router-dom" */
 
 function Footer() {
   return (

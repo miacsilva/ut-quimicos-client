@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function TintasVernizes() {
   return (
@@ -8,7 +8,12 @@ function TintasVernizes() {
       </header>
 
       <section className="singleProductBody">
-        <h2>Pastas pigmentárias:</h2>
+        
+        
+        <div className="cardsProducts">
+
+
+        <h2>Pastas pigmentárias</h2>
 
         <ul>
           <li>Base aquosa</li>
@@ -21,7 +26,11 @@ function TintasVernizes() {
           <li>Fluorescentes</li>
         </ul>
 
-        <h2>Corantes:</h2>
+        </div>
+
+
+        <div className="cardsProducts">
+        <h2>Corantes</h2>
 
         <ul>
           <li>
@@ -34,7 +43,13 @@ function TintasVernizes() {
           </li>
         </ul>
 
-        <h2>Outros:</h2>
+
+        </div>
+
+
+      <div className="cardsProducts">
+
+        <h2>Outros</h2>
 
 <ul>
         <li>Molhantes</li>
@@ -58,6 +73,10 @@ function TintasVernizes() {
         <li>Monomeros / oligomeros / resinas</li>
 
         </ul>
+
+
+        </div>
+
       </section>
     </div>
   );

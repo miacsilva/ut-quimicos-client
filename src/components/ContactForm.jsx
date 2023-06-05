@@ -100,7 +100,6 @@ function ContactForm() {
           onChange={handleMessage}
           value={message}
         />
-<button>teste</button>
         <input className="button" type="submit" value="Enviar" />
       </form>
       
