@@ -16,6 +16,7 @@ import Papel from "./pages/Papel";
 import CorticaCompositos from "./pages/CorticaCompositos";
 import DetergenteCosmetica from "./pages/DetergenteCosmetica";
 import Contactos from "./pages/Contactos";
+import OutrasIndustrias from "./pages/outrasIndustrias";
 
 /* CSS */
 import "./App.css";
@@ -40,10 +41,10 @@ function App() {
           path="/produtos/detergentes-cosmetica"
           element={<DetergenteCosmetica />}
         />
-        {/* <Route
+        <Route
           path="/produtos/outras-industrias"
           element={<OutrasIndustrias />}
-        /> */}
+        />
         <Route path="/parceiros" element={<Parceiros />} />
         <Route path="/contactos" element={<Contactos />} />
       </Routes>

@@ -255,8 +255,6 @@ body {
   position: absolute;
   bottom: 1rem;
   right: 4rem;
- /*  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);  */
   color: black;
   font-weight: bold;
   font-size: 25px;
@@ -270,7 +268,7 @@ body {
 }
 
 .section-inicial {
-  background-image: url("/public/footerBg.png");
+  background-image: url("/footerBg.png");
   background-size: cover;
   color: white;
 }
@@ -294,7 +292,7 @@ body {
   width: 100%;
   text-align: center;
   color: black;
-  letter-spacing: 15px;
+  letter-spacing: 13px;
   text-transform: uppercase;
   font-size: 200%;
 }
@@ -304,16 +302,25 @@ body {
   font-weight: 600;
 }
 
+.anchor:hover{
+  color: #141e30;
+}
+
 .productsText .border {
+  text-align: center;
   background-color: rgba(22, 45, 59);
   color: white;
-  text-shadow: 2px 2px 0px rgba(22, 45, 59);
+  text-shadow: 1.2px 1.2px 0px rgba(22, 45, 59);
   padding: 1.5%;
   font-weight: bolder;
+  /* border-radius: 15px; */
+  border-color: transparent;
 }
 
 #transp {
   background-color: transparent;
+  border-color: transparent;
+  background-color: rgba(95, 99, 101, 0.241);
 }
 
 .arrow {
