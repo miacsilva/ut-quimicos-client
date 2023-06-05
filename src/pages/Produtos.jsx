@@ -125,7 +125,7 @@ function Produtos() {
 
       <div className="productsImg8">
         <div className="productsText">
-          <span id="transp" className="border"><a href="/produtos/outras-industrias">Outras Indústrias</a></span>
+          <span id="transp" className="border"><a href="/produtos/outras-industrias" className="anchor">Outras Indústrias</a></span>
         </div>
       </div>
 
