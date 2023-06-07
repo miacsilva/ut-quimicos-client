@@ -1,12 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import jars from "/garrafasColoridasSemBGquadrado.png";
+/* import jars from "/garrafasColoridasSemBGquadrado.png"; */
+import bluecloud from "/nuvemAzul-removebg-preview.png"
+import ScrollReveal from "/src/containers/ScrollReveal";
 
 function Home() {
+  
   return (
     <>
       
       <section  className="homeContainer">
-        <h3>
+        {/* <h3>
           Criada em 2008, a <strong>U. T. Químicos, Lda</strong> é uma empresa de distribuição de
           produtos químicos e matérias primas para a indústria transformadora.
           <br />A nossa equipa experiente e dinâmica procura de forma contínua:
@@ -24,10 +27,30 @@ function Home() {
           de matérias-primas em Portugal e Pretendemos atingir este objectivo de
           forma sustentada baseando-nos em parâmetros exigentes de Qualidade,
           Segurança, Ambiente e Responsabilidade Social.
-        </h3>
+        </h3> */}
 
-      <img src={jars} alt="Fracos Pigmentados" className="jarImg"/>
+<div className="homeLetters">
+
+        <ScrollReveal >
+        <h3 className="area1"> U. T.</h3>
+      </ScrollReveal>  
+      <ScrollReveal>
+
+        <h3 className="area2"> Químicos, Lda</h3>
+      </ScrollReveal>
+  
+</div>
+
+      {/* <img src={jars} alt="Fracos Pigmentados" className="jarImg"/> */}
+      <img src={bluecloud} alt="Fracos Pigmentados" className="cloudImg"/> 
+
+
       </section>
+
+      <div className="secHomeContainer">
+
+
+      </div>
 
     </>
   );

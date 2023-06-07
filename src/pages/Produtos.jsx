@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import ScrollReveal from "/src/containers/ScrollReveal";
 
 function Produtos() {
   return (
@@ -25,11 +26,15 @@ function Produtos() {
 
       <div className="productsImg2">
         <div className="productsText">
+        <ScrollReveal>
+
           <span id="transp" className="border"> <a href="/produtos/tintas-vernizes" className="anchor">Tintas e Vernizes</a> </span>
+        </ScrollReveal>
         </div>
       </div>
 
       <section className="section section-dark">
+        
         <h2>Tintas e Vernizes</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate

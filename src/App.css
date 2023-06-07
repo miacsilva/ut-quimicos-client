@@ -1,6 +1,8 @@
 /* Import all of Bootstrap's CSS */
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 .cores {
   color: rgba(22, 45, 60, 0.835);
@@ -23,7 +25,7 @@ body {
   font-size: 10px;
   text-rendering: optimizeLegibility;
   width: 100vw;
-  background: rgb(239, 235, 235);
+  background: rgb(255, 253, 253);
   overflow-x: hidden; /* corrigir isto */
 }
 
@@ -73,6 +75,7 @@ body {
 
 .navbar-navlinks li a:hover {
   color: rgb(71, 119, 168);
+  transform: translatey(2px);
 }
 
 .nav-contactos {
@@ -147,41 +150,56 @@ body {
 /* ----------- Home ------------------*/
 
 .homeContainer {
-  width: 100%;
-  margin: 15vh 0 30vh;
+  width: 100vw;
+  /* margin: 0vh 10vw 30vh; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   color: rgba(22, 45, 60, 0.835);
+  position: relative;
 }
 
 .homeContainer h3 {
-  font-size: 2em;
-  margin-right: 10vw;
-  margin-left: 10vw;
-  line-height: 170%;
-  font-family: "Roboto";
+  font-size: 1300%;
+  font-family:"Roboto Condensed";
+/*   font-weight: bold; */
+/*   text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee
+     6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;  ; */
 }
-
-.cardsContainer1 {
+.homeLetters{
   display: flex;
-  width: 100vw;
+  flex-direction: column;
+  padding: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-
-.cardContainer2 {
-  width: 33vw;
-  font-size: 1em;
-}
-
-.cardContainer2 h2 {
-  font-size: 1em;
-}
-
-.jarImg {
+/* .jarImg {
   width: 30vw;
-  max-width: 100%;
+  /* max-width: 100%; 
   height: auto;
+} */
+
+
+.cloudImg {
+  width: 20vw;
+  height: max-content;
+  max-width: 100%;
+  position:absolute;
+  top: 0;
+  right: 80px;
 }
+
+.secHomeContainer{
+    width: 100vw;
+    height: 40vh;
+}
+
 
 /* ---- Produtos Parallax efexr ---------*/
 .Produtos {
@@ -203,7 +221,7 @@ body {
 .productsImg7, 
 .productsImg8 {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.85;
   background-position: 0rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -298,29 +316,27 @@ body {
 }
 
 .anchor {
-  color: #ffffff;
-  font-weight: 600;
+  color: #181b22;
 }
 
 .anchor:hover{
-  color: #141e30;
+  color: #929497;
 }
 
 .productsText .border {
   text-align: center;
   background-color: rgba(22, 45, 59);
   color: white;
-  text-shadow: 1.2px 1.2px 0px rgba(22, 45, 59);
+  text-shadow: 1.25px 1.25px 0px rgba(3, 4, 4, 0.636);
   padding: 1.5%;
   font-weight: bolder;
   /* border-radius: 15px; */
-  border-color: transparent;
 }
 
 #transp {
   background-color: transparent;
   border-color: transparent;
-  background-color: rgba(95, 99, 101, 0.241);
+  background-color: rgba(159, 170, 175, 0.241);
 }
 
 .arrow {
