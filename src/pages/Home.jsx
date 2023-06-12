@@ -34,7 +34,7 @@ function Home() {
         <ScrollReveal >
         <h3 className="area1"> U. T.</h3>
       </ScrollReveal>  
-      <ScrollReveal>
+      <ScrollReveal delay={1000}>
 
         <h3 className="area2"> Químicos, Lda</h3>
       </ScrollReveal>

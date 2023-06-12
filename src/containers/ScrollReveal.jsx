@@ -1,17 +1,17 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import scrollReveal from "scrollreveal";
 
-const ScrollReveal = ({ children, style }) => {
+const ScrollReveal = ({ children, style, delay = 500 }) => {
   const sectionRef = useRef(null);
   
   useEffect(() => {
     if (sectionRef.current) {
       scrollReveal().reveal(sectionRef.current, {
         reset: false,
-        delay: 500
+        delay: delay
       });
     }
-  }, []);
+  }, [delay]);
   
   return (
     <section

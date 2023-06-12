@@ -73,10 +73,22 @@ body {
   transition: 0.3s;
 }
 
-.navbar-navlinks li a:hover {
+
+.navItem a:hover {
   color: rgb(71, 119, 168);
   transform: translatey(2px);
 }
+
+
+
+.navbar-navlinks .active,
+.navbar-navlinks .active:hover,
+.navbar-navlinks .activeLink,
+.navbar-navlinks .activeLink:hover,
+.navbar-navlinks li:not(:first-child) a:hover{
+  color: rgb(71, 119, 168);
+}
+
 
 .nav-contactos {
   margin-right: 30px;
@@ -155,8 +167,12 @@ body {
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  color: rgba(22, 45, 60, 0.835);
+  color: rgb(83, 141, 199);
   position: relative;
+  background-image: url("/footerBg.png");
+  background-size: cover;
+  height: 100vh;
+
 }
 
 .homeContainer h3 {
@@ -198,6 +214,8 @@ body {
 .secHomeContainer{
     width: 100vw;
     height: 40vh;
+    background-color: rgb(83, 141, 199);
+    
 }
 
 

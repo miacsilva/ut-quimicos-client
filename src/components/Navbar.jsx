@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
 
@@ -20,11 +21,11 @@ function Navbar() {
      
       <div className={`navbar-navlinks ${isActive ? "active" : ""}`} >
             <ul>
-<li> <a href="/">Início</a></li>
-<li> <a href="/sobre">Sobre</a></li>
-<li> <a href="/produtos">Produtos</a></li>
-<li> <a href="/parceiros">Parceiros</a></li>
-<li > <a className="nav-contactos" href="/contactos">Contactos</a></li>
+<li className='navItem'> <NavLink exact to="/" >Início</NavLink></li>
+<li className='navItem'> <NavLink to="/sobre"  >Sobre</NavLink></li>
+<li className='navItem'> <NavLink to="/produtos"  >Produtos</NavLink></li>
+<li className='navItem'> <NavLink to="/parceiros" >Parceiros</NavLink></li>
+<li className='navItem'> <NavLink className="nav-contactos" to="/contactos">Contactos</NavLink></li>
 
             </ul>
 
