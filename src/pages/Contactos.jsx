@@ -1,4 +1,3 @@
-import React from "react";
 import ContactForm from "../components/ContactForm";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsFillHouseFill } from "react-icons/bs";
