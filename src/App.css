@@ -25,7 +25,7 @@ body {
   font-size: 10px;
   text-rendering: optimizeLegibility;
   width: 100vw;
- background-color: rgb(213, 230, 246);
+ background-color: rgba(255, 255, 255, 0.766);
   overflow-x: hidden; /* corrigir isto */
 }
 
@@ -163,7 +163,7 @@ body {
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  background-color: rgb(83, 141, 199); 
+  background-color: rgba(213, 230, 246, 0.766); 
   position: relative;
  
   height: 100vh;
@@ -203,11 +203,11 @@ body {
 .secHomeContainer {
   width: 100vw;
   height: max-content;
-  background-color: rgb(213, 230, 246);
+  background-color: rgba(255, 255, 255, 0.766);
   position: relative;
   text-align: justify;
   color: #243c4c;
-  background-image: URL(/public/backgroundHOME.png);
+  background-image: URL(/public/backgroundHOME2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -263,23 +263,23 @@ box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44)
 Please put this CSS in your css file or html head.
 
 .wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .wave svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 101px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 42px;
 }
 
 .wave .shape-fill {
-    fill: #243c4c;
+  fill: #283C4C;
 }
 
 /* MEDIA QUERIES HomePage */
@@ -392,7 +392,7 @@ Please put this CSS in your css file or html head.
 
 .section {
   text-align: center;
-  padding: 50px 80px 30px;
+  padding: 3vw 5vw 3vw;
 }
 
 .section-inicial {
@@ -402,8 +402,8 @@ Please put this CSS in your css file or html head.
 }
 
 .section-inicial p {
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left:35%;
+  padding-right: 35%;
   padding-top: 1%;
   text-align: center;
   color: rgba(207, 224, 229, 0.851);
@@ -412,6 +412,7 @@ Please put this CSS in your css file or html head.
   background-image: url("/footerBg.png");
   background-size: cover;
   color: rgba(93, 193, 224, 0.503);
+  padding: 2vw 0vw 2vw;
 }
 
 .productsText {
@@ -427,7 +428,7 @@ Please put this CSS in your css file or html head.
 
 .productsText .border2 {
   text-align: center;
-  background-color: rgb(22, 45, 59);
+  background-color: rgba(22, 45, 59, 0.908);
   color: white;
   text-shadow: 1.25px 1.25px 0px rgba(3, 4, 4, 0.636);
   padding: 1%;
@@ -468,6 +469,24 @@ Please put this CSS in your css file or html head.
   .scrollDown {
     display: none;
   }
+  .section {
+    text-align: center;
+    padding: 10vw 20vw 10vw;
+  }
+
+  .section-dark{
+    padding: 2vw 0 2vw;
+  }
+
+  .productsText {
+    letter-spacing: 6.5px;
+    font-size: 120%;
+  }
+  
+  .productsText .border2 {
+    padding: 2%;
+  }
+
 }
 
 /* ---- Produtos Parallax efexr--END----------*/
@@ -606,26 +625,39 @@ section {
 
 /* -------------Contactos------------------- */
 #contactos {
-}
-#contactos h2 {
-  text-shadow: 2px 2px 2px rgb(56, 149, 222);
-  text-align: center;
-  font-size: 5vw;
-  color: black;
-  z-index: 1;
-  margin-top: -30px;
+  background-color: rgba(255, 255, 255, 0.766);
 }
 
+
 #contactos header {
-  background-image: URL("/contacto-header.jpg");
-  background-size: cover;
   width: 100vw;
   max-height: 40vh;
   position: relative;
-  opacity: 0.7;
   background-position: 0rem;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: URL("/contactosBackground.png");
+  background-size: cover;
 }
+
+#contactos h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3vw;
+  z-index: 1;
+  margin-top: -30px;
+  text-align: center;
+  background-color: rgba(22, 45, 59, 0.912);
+  color: white;
+  text-shadow: 1.25px 1.25px 0px rgba(3, 4, 4, 0.636);
+  padding: 1.5%;
+  border-radius: 10px;
+  max-width: fit-content;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
 
 .maps {
   display: flex;
@@ -644,7 +676,7 @@ section {
 }
 
 .contactosTexto {
-  background: rgba(255, 255, 255, 0.09);
+  background: rgba(142, 139, 139, 0.09);
   border-radius: 15px;
   box-shadow: 0 4px 30px rgba(102, 101, 101, 0.24);
   backdrop-filter: blur(5px);
@@ -681,7 +713,8 @@ section {
 
 @media (max-width: 550px) {
   #contactos h2 {
-    font-size: 10vw;
+    font-size: 5vw;
+    padding: 4%;
   }
 
   .contactosTexto {
@@ -697,6 +730,10 @@ section {
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  #contactos header{
+    background-size: auto
   }
 }
 

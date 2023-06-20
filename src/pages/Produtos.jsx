@@ -11,7 +11,7 @@ function Produtos() {
 
       <div className="productsImg1">
         <div className="productsText">
-          <span className="border3">Produtos</span>
+        <ScrollReveal> <span className="border3">Produtos</span></ScrollReveal>
         </div>
         <h5 className="scrollDown">Scroll Down</h5>
       </div>
@@ -34,12 +34,9 @@ function Produtos() {
 
       <section className="section section-dark">
         
-        <h2>Tintas e Vernizes</h2>
+        <h2></h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
-          Nihil quo deserunt laudantium suscipit ipsa obcaecati nostrum amet
-          quidem animi sit.
+          
         </p>
       </section>
 
@@ -52,12 +49,9 @@ function Produtos() {
       </div>
 
       <section className="section section-dark">
-        <h2>Curtumes e Calçados  </h2>
+        <h2>  </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
-          Nihil quo deserunt laudantium suscipit ipsa obcaecati nostrum amet
-          quidem animi sit.
+          
         </p>
       </section>
 
@@ -72,12 +66,9 @@ function Produtos() {
       </div>
 
       <section className="section section-dark">
-        <h2>Plásticos  </h2>
+        <h2> </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
-          Nihil quo deserunt laudantium suscipit ipsa obcaecati nostrum amet
-          quidem animi sit.
+          
         </p>
       </section>
 
@@ -93,12 +84,9 @@ function Produtos() {
       </div>
 
       <section className="section section-dark">
-        <h2>Papel  </h2>
+        <h2> </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
-          Nihil quo deserunt laudantium suscipit ipsa obcaecati nostrum amet
-          quidem animi sit.
+          
         </p>
       </section>
 
@@ -113,12 +101,9 @@ function Produtos() {
       </div>
 
       <section className="section section-dark">
-        <h2>Cortiça e Compósitos  </h2>
+        <h2>  </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
-          Nihil quo deserunt laudantium suscipit ipsa obcaecati nostrum amet
-          quidem animi sit.
+          
         </p>
       </section>
 
@@ -134,12 +119,9 @@ function Produtos() {
       </div>
 
       <section className="section section-dark">
-        <h2>Detergentes  </h2>
+        <h2> </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
-          Nihil quo deserunt laudantium suscipit ipsa obcaecati nostrum amet
-          quidem animi sit.
+          
         </p>
       </section>
 
@@ -155,12 +137,9 @@ function Produtos() {
       </div>
 
       <section className="section section-dark">
-        <h2>Outras Indústrias  </h2>
+        <h2> </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          quas nisi laboriosam, corrupti provident placeat eveniet veniam ipsa?
-          Nihil quo deserunt laudantium suscipit ipsa obcaecati nostrum amet
-          quidem animi sit.
+         
         </p>
       </section>
 
