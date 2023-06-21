@@ -58,12 +58,15 @@ function ContactForm() {
 
   return (
     <div className="containerForm">
+     
       <h1 className="titleForm">
         Necessita de alguma informação ou quer ser contactado?
         <br></br>
          Deixe-nos uma mensagem!
         Responderemos com a máxima brevidade.
       </h1>
+
+    
 
       <form className="form" onSubmit={handleSubmit}>
         <input
@@ -104,7 +107,6 @@ function ContactForm() {
         />
         <input className="buttonForm" type="submit" value="Enviar" />
       </form>
-      
     </div>
   );
 }

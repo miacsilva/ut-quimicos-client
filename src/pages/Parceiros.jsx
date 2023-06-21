@@ -1,14 +1,17 @@
-import React from 'react'
+
 import cromatos from "/Cromatos_800x800.png"
 import colorlac from "/cl-logo.png"
 import igm from "/igm-logo.png"
 
 function Parceiros() {
   return (
-    <div>
+    <div id="parceiros">
         <header>
-            <h1>Parceiros</h1>
-        </header>
+  <h2>Parceiros</h2>
+</header>
+
+
+
 
         <section>
                 <div className='logo-container'>

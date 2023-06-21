@@ -13,14 +13,13 @@ function Contactos() {
 
       <header>
 
-      <div >
-        
-      </div>
-
         <h2>Contacte-nos</h2>
       </header>
 
-      <section className="contactos">
+
+
+
+      <section >
         <div className="contactosHardCoded">
           
           

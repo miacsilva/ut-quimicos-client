@@ -223,6 +223,7 @@ body {
 
 .secHomeContainer h4{
   font-size: 1.4vw;
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -240,7 +241,8 @@ body {
   backdrop-filter: blur(3px);
   -webkit-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
 -moz-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44)
+box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
+font-family: "Roboto Condensed", sans-serif;
 }
 
 .jarImg {
@@ -602,6 +604,40 @@ header h1 {
     "Lucida Sans", Arial, sans-serif;
 }
 
+#parceiros {
+  background-color: rgba(255, 255, 255, 0.766);
+}
+
+
+#parceiros header {
+  width: 100svw;
+  max-height: 40vh;
+  position: relative;
+  background-position: 0rem;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: URL("/handshakeHeaderOp.png");
+  background-size: cover;
+}
+
+#parceiros h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2vw;
+  z-index: 1;
+  margin-top: -30px;
+  text-align: center;
+  background-color: rgba(22, 45, 59, 0.912);
+  color: white;
+  text-shadow: 1.25px 1.25px 0px rgba(3, 4, 4, 0.636);
+  padding: 1.5%;
+  border-radius: 10px;
+  max-width: fit-content;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
 section {
   width: 100vw;
   padding: 0 10vw;
@@ -644,7 +680,7 @@ section {
 
 #contactos h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 3vw;
+  font-size: 2.2vw;
   z-index: 1;
   margin-top: -30px;
   text-align: center;
