@@ -630,7 +630,7 @@ section {
 
 
 #contactos header {
-  width: 100vw;
+  width: 100svw;
   max-height: 40vh;
   position: relative;
   background-position: 0rem;
@@ -663,6 +663,7 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  color: rgba(22, 45, 60, 0.925);
 }
 
 .maps iframe {
@@ -675,28 +676,28 @@ section {
   box-shadow: 10px 12px 10px 2px #162d3cd5;
 }
 
-.contactosTexto {
-  background: rgba(142, 139, 139, 0.09);
-  border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(102, 101, 101, 0.24);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 
+.contactosTexto {
+  background: rgba(162, 202, 225, 0.137);
+  border-radius: 15px;
+/*   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-around;
-  padding: 15px;
-  width: 80%;
+  padding: 40px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
   margin-bottom: 7%;
+  color: rgba(22, 45, 60, 0.925);;
 }
 
 .contactosTexto h5 {
   font-size: 23px;
   font-weight: 300;
   margin-bottom: 15px;
+
 }
 .contactosTexto p {
   font-size: 13px;
@@ -826,19 +827,18 @@ section {
   align-items: center;
   flex-direction: column;
   background-color: #162d3cd5;
-  /* color: #FFF; */
-  /* color:rgba(22, 45, 60, 0.835);
-color:rgba(22, 45, 59); */
   padding: 14px;
-  border-bottom: rgba(208, 227, 244, 0.849) solid 2px;
+  background-image: URL(/mulherPalete2.jpg);
+  background-size: cover;
 }
 
 .titleForm {
+  font-family: Roboto;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: clamp(23px,2vw,27px);
   width: 60%;
   text-align: center;
-  color: rgba(208, 227, 244, 0.849);
+  color: rgba(22, 45, 60, 0.835);
 }
 
 .form {
@@ -849,12 +849,14 @@ color:rgba(22, 45, 59); */
 }
 
 .input {
+  font-size: 12px;
   margin-bottom: 14px;
   height: 34px;
   border-radius: 4px;
   border: 0;
   padding: 0 8px;
   background-color: rgba(208, 227, 244, 0.849);
+  color: rgb(22, 45, 60);;
 }
 
 .textarea {
@@ -864,22 +866,38 @@ color:rgba(22, 45, 59); */
   padding: 8px;
   height: 94px;
   resize: none;
-  background-color: rgba(208, 227, 244, 0.849);
+  background-color: rgba(208, 227, 244, 0.929);
+  color:rgb(22, 45, 60);
+  font-size: 12px;
 }
 
-.button {
+.buttonForm {
   height: 34px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  background-color: #0fdbff;
+  background-color: rgba(22, 45, 60, 0.904);
+  backdrop-filter: blur(5px);
   font-size: 18px;
   transition: background-color, transform 0.8s;
 }
 
-.button:hover {
-  background-color: #0fe3ff;
-  transform: scale(1.01);
+.buttonForm:hover {
+  background-color: rgba(34, 67, 90, 0.903);;
+  transform: scale(1.02);
+}
+
+
+@media (max-width:600px){
+
+  .titleForm{
+    width:90%;
+  }
+
+  .containerForm{
+    min-height: 70vh;
+  }
+
 }
 
 /* ---------Message Form--END---------- */

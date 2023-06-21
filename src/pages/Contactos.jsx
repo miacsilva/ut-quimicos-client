@@ -13,7 +13,7 @@ function Contactos() {
 
       <header>
 
-      <div className="contactosHeader">
+      <div >
         
       </div>
 

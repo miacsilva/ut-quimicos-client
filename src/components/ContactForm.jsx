@@ -59,7 +59,9 @@ function ContactForm() {
   return (
     <div className="containerForm">
       <h1 className="titleForm">
-        Necessita de alguma informação ou quer ser contactado? Deixe-nos uma mensagem!
+        Necessita de alguma informação ou quer ser contactado?
+        <br></br>
+         Deixe-nos uma mensagem!
         Responderemos com a máxima brevidade.
       </h1>
 
@@ -100,7 +102,7 @@ function ContactForm() {
           onChange={handleMessage}
           value={message}
         />
-        <input className="button" type="submit" value="Enviar" />
+        <input className="buttonForm" type="submit" value="Enviar" />
       </form>
       
     </div>
