@@ -16,7 +16,7 @@ function Produtos() {
         <h5 className="scrollDown">Scroll Down</h5>
       </div>
       
-      <section className="section section-inicial">
+      <section className="sectionP section-inicial">
         <h2>Produtos para as aplicações nas mais diversas Indústrias</h2>
         <p>
           Na U. T. Químicos comercializamos produtos para os mais diversos fins, incidindo maioritáriamente na distribuíção de químicos para as indústrias das Tintas e Vernizes, dos Curtumes e dos Plásticos. 
@@ -32,7 +32,7 @@ function Produtos() {
         </div>
       </div>
 
-      <section className="section section-dark">
+      <section className="sectionP section-dark">
         
         <h2></h2>
         <p>
@@ -48,7 +48,7 @@ function Produtos() {
         </div>
       </div>
 
-      <section className="section section-dark">
+      <section className="sectionP section-dark">
         <h2>  </h2>
         <p>
           
@@ -65,7 +65,7 @@ function Produtos() {
         </div>
       </div>
 
-      <section className="section section-dark">
+      <section className="sectionP section-dark">
         <h2> </h2>
         <p>
           

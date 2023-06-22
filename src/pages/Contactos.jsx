@@ -2,6 +2,7 @@ import ContactForm from "../components/ContactForm";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsFillHouseFill } from "react-icons/bs";
 import { BsEnvelopeAtFill } from "react-icons/bs";
+import ScrollReveal from "/src/containers/ScrollReveal";
 
 
 
@@ -26,7 +27,7 @@ function Contactos() {
           <div className="contactosTexto">
 
           <div className="contactosTextoGroup">
-            <h5>Sede</h5>
+            <h5>Sede / Escritório</h5>
             <p><BsFillHouseFill/>  Travessa do Outeirinho, n.º 42 e 104</p>
             <p>     Apartado 139</p>
             <p>     4730-794 Vila Verde</p>
@@ -48,7 +49,7 @@ function Contactos() {
 
 
           </div>
-
+          <ScrollReveal delay={1100}>
           <div className="maps">
             <div className="officeMap">
               <h5>Escritório</h5>
@@ -76,8 +77,8 @@ function Contactos() {
               ></iframe>
             </div>
           </div>
+        </ScrollReveal>
         </div>
-
       </section>
         <div className="Formulário">
           <ContactForm />

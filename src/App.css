@@ -339,6 +339,9 @@ Please put this CSS in your css file or html head.
   background-position: 0rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .productsImg1 {
   background-image: url("/tubosDeEnsaio.jpg");
@@ -392,7 +395,7 @@ Please put this CSS in your css file or html head.
   font-size: 25px;
 }
 
-.section {
+.sectionP {
   text-align: center;
   padding: 3vw 5vw 3vw;
 }
@@ -471,7 +474,7 @@ Please put this CSS in your css file or html head.
   .scrollDown {
     display: none;
   }
-  .section {
+  .sectionP {
     text-align: center;
     padding: 10vw 20vw 10vw;
   }
@@ -640,21 +643,46 @@ header h1 {
 
 section {
   width: 100vw;
-  padding: 0 10vw;
+  padding: 3vw 10vw;
 }
 
 .logo-container {
+  background: rgba(162, 202, 225, 0.137);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  color: rgba(22, 45, 60, 0.925);
+  font-family: "Roboto";
+}
+
+.logo-container h3{
+  font-size: 35px;
+  letter-spacing: 7px;
+  margin-bottom: 5vw;
+}
+
+.Nacionais{
+  margin-top: 5vw;
+}
+
+.partnersImagesCont{
   display: flex;
   flex-wrap: wrap;
-  border: 4px solid rgba(0, 0, 0, 0.348);
-  border-radius: 20px;
-  background: rgb(56, 149, 222);
-  background: linear-gradient(#141e30, #243b55);
+  justify-content: space-around;
 }
 
 .parceiros-logo {
-  height: 20vh;
-  margin: 5vh 15vw;
+  max-height: 100%;
+  width:250px;
+  margin: 15px 15px;
+  object-fit:contain;
 }
 
 /* ---------------Parceiros END--------------- */
@@ -712,6 +740,15 @@ section {
   box-shadow: 10px 12px 10px 2px #162d3cd5;
 }
 
+.maps h5{
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 
 .contactosTexto {
   background: rgba(162, 202, 225, 0.137);
@@ -730,9 +767,12 @@ section {
 }
 
 .contactosTexto h5 {
-  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  font-size: 25px;
   font-weight: 300;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  font-weight: bolder;
 
 }
 .contactosTexto p {
