@@ -972,6 +972,7 @@ section {
   backdrop-filter: blur(5px);
   font-size: 18px;
   transition: background-color, transform 0.8s;
+  color: aliceblue;
 }
 
 .buttonForm:hover {
