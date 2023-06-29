@@ -1,12 +1,15 @@
-/* import { useState } from 'react' */
-import { Routes, Route } from "react-router-dom";
+import './index.css'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
-/* Components */
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 /* Pages */
 import Home from "./pages/Home";
+import Sobre from './pages/Sobre';
 import Produtos from "./pages/Produtos";
 import Parceiros from "./pages/Parceiros";
 import TintasVernizes from "./pages/TintasVernizes";
@@ -18,16 +21,27 @@ import DetergenteCosmetica from "./pages/DetergenteCosmetica";
 import Contactos from "./pages/Contactos";
 import OutrasIndustrias from "./pages/outrasIndustrias";
 
+
+
+/* Layout */
+import RootLayout from './layouts/RootLayout.jsx';
+
+
+
 /* CSS */
 import "./App.css";
 
-function App() {
-  return (
-    <>
-      <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+
+    <Route path="/" element={<RootLayout/>}>
+
+    <Route path="/" element={<Home />} />
+
+
+        <Route path="/sobre" element={<Sobre />} />
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/produtos/tintas-vernizes" element={<TintasVernizes />} />
         <Route path="/produtos/curtumes" element={<Curtumes />} />
@@ -47,9 +61,22 @@ function App() {
         />
         <Route path="/parceiros" element={<Parceiros />} />
         <Route path="/contactos" element={<Contactos />} />
-      </Routes>
+      
 
-      <Footer />
+        </Route>
+
+       
+  )
+  )
+
+
+
+function App() {
+  return (
+    <>
+
+<RouterProvider router={router} />
+
     </>
   );
 }

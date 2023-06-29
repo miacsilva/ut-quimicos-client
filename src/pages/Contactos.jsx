@@ -49,7 +49,7 @@ function Contactos() {
 
 
           </div>
-          <ScrollReveal delay={1000}>
+          <ScrollReveal delay={800}>
           <div className="maps">
             <div className="officeMap">
               <h5>Escritório</h5>

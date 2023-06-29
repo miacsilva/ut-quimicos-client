@@ -455,6 +455,7 @@ Please put this CSS in your css file or html head.
   padding: 1%;
   font-weight: bolder;
   border-radius: 10px;
+  text-decoration: none;
 }
 .productsText .border3 {
   text-align: center;
@@ -700,6 +701,7 @@ section {
   margin: 15px 15px;
   object-fit:contain;
 }
+
 
 /* ---------------Parceiros END--------------- */
 

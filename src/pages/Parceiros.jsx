@@ -1,7 +1,11 @@
+
 import cromatos from "/Cromatos_800x800.png";
 import colorlac from "/cl-logo.png";
 import igm from "/igm-logo.png";
 import octoquimica from "/octoLogo-NoBg.png"
+import { Link } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
+
 
 function Parceiros() {
   return (
@@ -49,6 +53,9 @@ function Parceiros() {
           </div>
         </div>
       </section>
+
+<Link to="/contactos"><button> Go to contacts</button></Link>
+<ScrollRestoration/>
     </div>
   );
 }
