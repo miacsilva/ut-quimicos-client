@@ -3,6 +3,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsFillHouseFill } from "react-icons/bs";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import ScrollReveal from "/src/containers/ScrollReveal";
+import ScrollBackUp from "../components/ScrollBackUp"
 
 
 
@@ -10,6 +11,7 @@ import ScrollReveal from "/src/containers/ScrollReveal";
 function Contactos() {
   return (
     <div id="contactos">
+    <ScrollBackUp/>
 
 
       <header>
@@ -49,7 +51,7 @@ function Contactos() {
 
 
           </div>
-          <ScrollReveal delay={800}>
+          <ScrollReveal delay={300}>
           <div className="maps">
             <div className="officeMap">
               <h5>Escritório</h5>

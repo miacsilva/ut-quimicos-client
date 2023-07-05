@@ -1,8 +1,9 @@
-
+import ScrollBackUp from "../components/ScrollBackUp"
 
 function TintasVernizes() {
   return (
     <div>
+    <ScrollBackUp/>
       <header className="singleProductHeader SP1">
         <h1>Tintas e Vernizes</h1>
       </header>

@@ -40,12 +40,17 @@ body {
   filter: drop-shadow(0px 0px 50px #ffffff) brightness(170%);
 }
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
   background-size: cover;
   align-items: center;
-  background-image: url("/footerBg.png");
+ /*  background-image: url("/footerBg.png"); */
+ background-color: transparent;
+ position:absolute;
+ z-index: 40;
+ width: 100vw;
   /* background: linear-gradient(
     0deg,
     rgba(210, 246, 246, 0.9) 100%,
@@ -159,30 +164,39 @@ body {
 
 .homeContainer {
   width: 100vw;
-  /* margin: 0vh 10vw 30vh; */
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  display: flex; 
+  align-items: center;
   background-color: rgba(213, 230, 246, 0.766); 
   position: relative;
- 
   height: 100vh;
-  background-image: url("/footerBg.png");
+  background-image: url(/background-HomePage-Edited2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover; 
 }
 
 .homeContainer h3 {
-  font-size: 9vw;
-  font-family: "Roboto Condensed";
- /*  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  color:rgb(83, 141, 199); 
-
- /*  background-image: url("/public/blue-textura.jpg");
-  background-size: cover; 
-  color: transparent;
-  -webkit-background-clip: text; */
-  /*   font-weight: bold; */
+  font-size: 12rem;
+  font-family: "Bicubik Regular";
+  color:rgba(22, 45, 60, 0.835);
+  margin-bottom: 10%;
 }
+
+.text2{
+  font-family: "Azoft Sans";
+  font-size: 2rem;
+  color:rgba(22, 45, 60, 0.835);
+}
+.text3{
+  font-size: 2.7rem;
+  color:rgb(83, 141, 199);
+  letter-spacing: 9px;
+  font-family: "Azoft Sans";
+  margin-left: 30px;
+}
+
+
+
 .homeLetters {
   display: flex;
   flex-direction: column;
@@ -191,14 +205,14 @@ body {
   padding-bottom: 10%;
 }
 
-.cloudImg {
+/* .cloudImg {
   width: 20vw;
   height: max-content;
   max-width: 100%;
   position: absolute;
   top: 0;
   right: 80px;
-}
+} */
 
 .secHomeContainer {
   width: 100vw;
@@ -207,7 +221,7 @@ body {
   position: relative;
   text-align: justify;
   color: #243c4c;
-  background-image: URL(/public/backgroundHOME2.png);
+  background-image: URL(/public/azulBlackBg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -258,29 +272,7 @@ font-family: "Roboto Condensed", sans-serif;
   text-align: left;
 }
 
-/* Home Wave Test */
 
-Please put this CSS in your css file or html head.
-
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 42px;
-}
-
-.wave .shape-fill {
-  fill: #283C4C;
-}
 
 /* MEDIA QUERIES HomePage */
 
@@ -292,9 +284,6 @@ Please put this CSS in your css file or html head.
 
   .homeContainer h3 {
     font-size: 15vw;
-    font-family: "Roboto Condensed";
-   /*  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    color:rgb(83, 141, 199); 
   }
 
   .secHomeContainerContent{
@@ -625,7 +614,11 @@ header h1 {
 }
 
 #parceiros {
-  background-color: rgba(255, 255, 255, 0.766);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/footerBg.png");
+  background-size: cover;
 }
 
 
@@ -658,18 +651,18 @@ header h1 {
   text-transform: uppercase;
 }
 
-section {
+.parceiros-section {
   width: 100vw;
-  padding: 3vw 10vw;
+  padding: 0vw 3vw 0vw 2vw;
 }
 
 .logo-container {
-  background: rgba(162, 202, 225, 0.137);
+  background: rgb(243, 245, 247);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 8%;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -680,9 +673,12 @@ section {
 }
 
 .logo-container h3{
-  font-size: 35px;
-  letter-spacing: 7px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-size: 1.5vw;
+  letter-spacing: 1px;
   margin-bottom: 5vw;
+  padding: 0 15vw;
+  text-align: center;
 }
 
 .Nacionais{
@@ -702,12 +698,25 @@ section {
   object-fit:contain;
 }
 
+.ecopower{
+  width:100px;
+}
+
+.partnersBtn{
+  margin-bottom: 40%;
+}
+
+
+
+
+
 
 /* ---------------Parceiros END--------------- */
 
 /* -------------Contactos------------------- */
 #contactos {
-  background-color: rgba(255, 255, 255, 0.766);
+  background-image: url("/footerBg.png");
+  background-size: cover;
 }
 
 
@@ -720,7 +729,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: URL("/contactosBackground.png");
+  background-image: URL("/contacto-header.jpg");
   background-size: cover;
 }
 
@@ -745,7 +754,7 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  color: rgba(22, 45, 60, 0.925);
+  color:  white;
 }
 
 .maps iframe {
@@ -755,7 +764,7 @@ section {
   width: 100%;
   aspect-ratio: 16/9;
   max-width: 350px;
-  box-shadow: 10px 12px 10px 2px #162d3cd5;
+  box-shadow: 10px 12px 10px 2px #94c4e478;
 }
 
 .maps h5{
@@ -769,7 +778,7 @@ section {
 
 
 .contactosTexto {
-  background: rgba(162, 202, 225, 0.137);
+  background: rgba(182, 211, 228, 0.804);
   border-radius: 15px;
 /*   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1044,4 +1053,34 @@ section {
   background-color: rgba(255, 255, 255, 0.399);
   backdrop-filter: blur(10px);
   color: #243b55;
+  border-radius: 10px;
+}
+
+
+.goSomewhereButton{
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgba(53, 108, 144, 0.921);
+  backdrop-filter: blur(5px);
+  font-size: 15px;
+  transition: background-color, transform 0.8s;
+  color: aliceblue;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  width: 15vw;
+  justify-content: center;
+  transition: 0.8s;
+}
+
+.goSomewhereButton:hover {
+  background-color: rgba(34, 67, 90, 0.903);;
+  transform: scale(1.1);
+}
+
+.link-underline{
+  text-decoration: none;
 }

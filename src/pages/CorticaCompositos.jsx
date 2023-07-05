@@ -1,7 +1,9 @@
+import ScrollBackUp from "../components/ScrollBackUp"
 
 function CorticaCompositos() {
   return (
     <div>
+    <ScrollBackUp/>
       <header className="singleProductHeader SP5">
         <h1>Cortiça e Compósitos</h1>
       </header>
