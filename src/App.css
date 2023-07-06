@@ -58,7 +58,8 @@ body {
 
 .navbar-navlinks li a {
   text-decoration: none;
-  color: #4777a8;
+  color: rgba(22, 45, 59);
+  text-shadow:rgb(218, 216, 216) 1px 1px 3px;
  
   padding: 1rem;
   display: block;
@@ -72,11 +73,12 @@ body {
 }
 
 .navbar-navlinks .active,
-.navbar-navlinks .active:hover,
+.navbar-navlinks .active:hover
 .navbar-navlinks .activeLink,
 .navbar-navlinks .activeLink:hover,
 .navbar-navlinks li:not(:first-child) a:hover {
   color: rgb(214, 229, 245);
+  text-shadow: rgba(22, 45, 60, 0.595) 1px 2px 5px;
 }
 
 .nav-contactos {
@@ -340,7 +342,7 @@ font-family: "Roboto Condensed", sans-serif;
 }
 .productsImg1 {
   background-image: url("/tubosDeEnsaio.jpg");
-  min-height: 89vh;
+  min-height: 100vh;
   background-size: cover;
 }
 .productsImg2 {
