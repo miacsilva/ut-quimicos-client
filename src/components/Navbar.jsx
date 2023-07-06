@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 function Navbar() {
 
   const [isActive, setIsActive] = useState(false)
@@ -11,7 +12,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="brand-logo"> <a href="/"><img className="logo" src="/ut-log-enhanced-noBg-white.png" alt="UT Químicos logotipo"/></a> </div>
+      <div className="brand-logo"> <a href="/">{/* <img className="logo" src={logo} alt="UT Químicos logotipo"/> */}</a> </div>
        
         <a href="#" className={`toggle-button ${isActive ? "active" : ""}`} onClick={handleClick}>
           <span className="bar"></span>

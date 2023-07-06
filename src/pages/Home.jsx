@@ -4,6 +4,8 @@ import ScrollReveal from "/src/containers/ScrollReveal";
 import group from "/group-icon.png"
 import handshake from "/handshake-icon.png"
 import exchange from "/exchange-icon.png"
+import logo from "/new-logo-iconNname.png"
+
 
 
 function Home() {
@@ -12,10 +14,13 @@ function Home() {
       <section className="homeContainer">
         <div className="homeLetters">
           <ScrollReveal>
-            <h3 className="text1"> U T Q</h3>
+          <img className="logo text1" src={logo} alt="UT Químicos logotipo"/>
+           
           </ScrollReveal>
           <ScrollReveal delay={1000} duration={2000}>
             <h5 className="text2">COMÉRCIO E <br/> DISTRIBUIÇÃO DE</h5>
+            </ScrollReveal>
+            <ScrollReveal delay={2000} duration={3000}>
             <h4 className="text3">PRODUTOS QUÍMICOS</h4>
           </ScrollReveal>
         </div>
