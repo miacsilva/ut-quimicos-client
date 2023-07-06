@@ -176,6 +176,11 @@ body {
   margin-bottom: 10%;
 }
 
+/* @font-face {
+  font-family: ;
+  src: url();
+} */
+
 .text2{
   font-family: "Azoft Sans",  "azoft-sans" ;
   font-size: 2rem;
