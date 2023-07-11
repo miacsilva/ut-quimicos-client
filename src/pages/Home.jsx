@@ -4,7 +4,7 @@ import ScrollReveal from "/src/containers/ScrollReveal";
 import group from "/group-icon.png";
 import handshake from "/handshake-icon.png";
 import exchange from "/exchange-icon.png";
-import logo from "/new-logo-iconNname.png";
+import logo from "/UTQ-logo.png";
 import colormix from "/poCoresCroppedDark.jpg";
 import produtosImage from "/public/tubosDeEnsaio.jpg"
 import contactosImage from "/public/contacto-header.jpg"
