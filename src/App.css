@@ -175,6 +175,7 @@ body {
   display: block;
   filter: drop-shadow(0px 0px 50px #ffffff) brightness(170%);
   margin-bottom: 5%;
+  margin-left: 90px;
 }
 
 /* @font-face {
@@ -183,16 +184,16 @@ body {
 } */
 
 .text2{
-  font-family: "Azoft Sans",  "azoft-sans" ;
+  font-family: "Azoft Sans",  "azoft-sans", "Verdana" ;
   font-size: 2rem;
   color:rgba(254, 254, 255, 0.922);
-  margin-left: 100px;
+  margin-left: 00px;
 }
 .text3{
-  font-size: 3.5rem;
+  font-size: 4rem;
   color:rgb(150, 200, 249);
   letter-spacing: 9px;
-  font-family: "Azoft Sans", "azoft-sans";
+  font-family: "Azoft Sans", "azoft-sans", "Verdana";
   margin-left: 200px;
 }
 
@@ -205,14 +206,6 @@ body {
   padding-bottom: 10%;
 }
 
-/* .cloudImg {
-  width: 20vw;
-  height: max-content;
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  right: 80px;
-} */
 
 .secHomeContainer {
   width: 100vw;
@@ -293,7 +286,6 @@ font-family: "Roboto", sans-serif;
   display: flex;
 }
 
-
 .produtosSquare, .contactosSquare{
  overflow: hidden;
  width: 50vw;
@@ -301,6 +293,8 @@ font-family: "Roboto", sans-serif;
  display: flex;
  justify-content: left;
  align-items: center;
+ height: 100%;
+ text-decoration: none;
 }
 
 .lastBannerHomePage img{
@@ -321,15 +315,16 @@ font-family: "Roboto", sans-serif;
 }
 
 .produtosSquare h2, .contactosSquare h2{
-  z-index:2;
+  z-index:1;
   color:white ;
-  font-family: "Roboto condensed";
+  font-family: "Roboto condensed", "Roboto", "Verdana";
   letter-spacing: 3.5px;
   white-space: pre-wrap;
   font-size: 2rem;
   text-transform: uppercase;
-  margin: 0;
+  margin-left: 40px;
 }
+
 
 .produtosSquare h2 span{
   color:white;
@@ -337,7 +332,7 @@ font-family: "Roboto", sans-serif;
 }
 
 
-
+/* Arrow Down Animations*/
 
 /* MEDIA QUERIES HomePage */
 
@@ -390,7 +385,8 @@ font-family: "Roboto", sans-serif;
   height: 100%;
   margin: 0;
   font-size: 1rem;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Verdana";
   font-weight: 400;
   line-height: 1.8em;
   color: rgba(22, 45, 59, 0.836);

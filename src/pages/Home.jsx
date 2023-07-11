@@ -95,27 +95,30 @@ function Home() {
             <div className="lastBannerHomePage">
 
 
+<Link to="/produtos" className="produtosSquare">
 <div className="produtosSquare">
 
-<Link to="/produtos">
 
 
-<h2>   Ver os nossos <span>produtos</span>
+<h2>  
+ Os nossos <span>
+  produtos</span>
  </h2>
 <img src={produtosImage} alt="ir para produtos" />
 
+
+</div>
 </Link>
 
-</div>
-
-
+<Link to="/contactos" className="produtosSquare">
 <div className="contactosSquare">
 <h2>   Contacte-nos</h2>
+<Link to="/produtos"></Link>
+
 <img src={contactosImage} alt="ir para contactos" />
 
-
 </div>
-
+</Link>
 
             </div>
 
