@@ -8,9 +8,9 @@
 
 .cores {
   color: rgba(22, 45, 60, 0.835);
-  color: rgba(22, 45, 59);
+  color: #162d3b;
   color: rgba(201, 207, 211, 0.849); /* antigo background */
-  color: rgb(83, 141, 199); /* "Produtos Químicos- Homepage" */
+  color: #538dc7; /* "Produtos Químicos- Homepage" */
 }
 
 * {
@@ -169,6 +169,7 @@ body {
 
 .logo {
   height: 30em;
+  width:42em;
   will-change: filter;
   transition: filter 300ms;
   display: block;
@@ -215,60 +216,125 @@ body {
 .secHomeContainer {
   width: 100vw;
   height: max-content;
-  background-color: rgba(255, 255, 255, 0.766);
   position: relative;
   text-align: justify;
   color: #243c4c;
-  background-image: URL(/public/azulBlackBg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color:rgba(222,228,227,255);
 }
 
 .secHomeContainerContent{
-  padding-left: 1vw;
-  padding-right: 5vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column
 }
 
 .secHomeContainer h4{
   font-size: 1.4vw;
   font-family: "Roboto", sans-serif;
+  width: 15vw;
 }
 
 
 .secHomeContainerContent h3{
-  font-size: 1.2vw;
-  margin: 10vw 0 8vw 10vw;
+  font-size: 2.9em;
+  margin: 10vw 10vw 0vw 10vw;
   margin-top: 70px;
-  line-height: 30px;
+  line-height: 40px;
+  text-align: center;
   /* background-image: URL("/public/blue-textura.jpg"); */
-  background-color: #ffffff;
-  background-color: rgba(195, 213, 231, 0.208); 
-  border-radius: 100px;
+ /*  background-color: #ffffff;
+  background-color: rgba(195, 213, 231, 0.208); */ 
+  border-radius: 10px;
   color:#243b55;
   padding: 60px 60px 60px 60px;
   backdrop-filter: blur(3px);
-  -webkit-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
+/*   -webkit-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
 -moz-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
-font-family: "Roboto Condensed", sans-serif;
+box-shadow: 16px 20px 58px -3px rgba(36,59,850.44); */
+font-family: "Roboto", sans-serif;
+
 }
 
-.jarImg {
-  position: relative;
+.bannerHomePage{
+  background-image: url(/public/poCoresCroppedDark.jpg);
+  background-position-y: -20px;
+  background-attachment: fixed;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.9em;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #eaebed;
+}
+
+
+.secHomeContainerImageText{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.colormix {
   width: 30vw;
-  bottom: -10%;
 }
 
 .iconAndText{
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   align-self: center;
   /* margin-bottom: 40px; */
   text-align: left;
 }
+
+.lastBannerHomePage{
+  height: 30vw;
+  display: flex;
+}
+
+
+.produtosSquare, .contactosSquare{
+ overflow: hidden;
+ width: 50vw;
+ position: relative;
+ display: flex;
+ justify-content: left;
+ align-items: center;
+}
+
+.lastBannerHomePage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.7s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+.lastBannerHomePage img:hover{
+  transform: scale(1.1);
+  filter: brightness(0.5) blur(3px);
+}
+
+.produtosSquare h2, .contactosSquare h2{
+  z-index:2;
+  color:white ;
+  font-family: "Roboto condensed";
+  letter-spacing: 3.5px;
+  white-space: pre-wrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.produtosSquare h2 span{
+  color:white;
+  font-size: 3rem;
+}
+
 
 
 
@@ -617,6 +683,8 @@ header h1 {
   align-items: center;
   background-image: url("/footerBg.png");
   background-size: cover;
+  background: rgb(22,45,59);
+background: linear-gradient(0deg, rgb(32, 65, 85) 0%, rgb(196, 219, 227) 80%, rgba(22,45,59,1) 100%);
 }
 
 
@@ -651,11 +719,11 @@ header h1 {
 
 .parceiros-section {
   width: 100vw;
-  padding: 0vw 3vw 0vw 2vw;
+  padding: 0vw 10vw 0vw 10vw;
 }
 
 .logo-container {
-  background: rgb(243, 245, 247);
+  background: rgba(243, 245, 247, 0.171);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
@@ -715,6 +783,9 @@ header h1 {
 #contactos {
   background-image: url("/footerBg.png");
   background-size: cover;
+  background: rgb(22,45,59);
+background: linear-gradient(0deg, rgb(32, 65, 85) 0%, rgb(203, 234, 246) 100%);
+
 }
 
 
@@ -783,7 +854,7 @@ header h1 {
   display: flex;
   justify-content: space-around;
   padding: 40px;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
@@ -792,12 +863,11 @@ header h1 {
 }
 
 .contactosTexto h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 5px;
   font-size: 25px;
-  font-weight: 300;
   margin-bottom: 40px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 
 }
 .contactosTexto p {
