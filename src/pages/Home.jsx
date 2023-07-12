@@ -6,9 +6,10 @@ import handshake from "/handshake-icon.png";
 import exchange from "/exchange-icon.png";
 import logo from "/UTQ-logo.png";
 import colormix from "/poCoresCroppedDark.jpg";
-import produtosImage from "/public/tubosDeEnsaio.jpg"
-import contactosImage from "/public/contacto-header.jpg"
+import produtosImage from "/tubosDeEnsaio.jpg"
+import contactosImage from "/contacto-header.jpg"
 import { Link } from "react-router-dom";
+import scrollGif from "/mouseScroll.gif"
 
 
 
@@ -17,25 +18,31 @@ function Home() {
     <>
       <section className="homeContainer">
         <div className="homeLetters">
-          <img className="logo text1" src={logo} alt="UT Químicos logotipo" />
 
+        <ScrollReveal delay={700} duration={1000}>
+          <img className="logo text1" src={logo} alt="UT Químicos logotipo" />
+</ScrollReveal>
           <ScrollReveal delay={1000} duration={2000}>
             <h5 className="text2">
               COMÉRCIO E <br /> DISTRIBUIÇÃO DE
             </h5>
           </ScrollReveal>
-          <ScrollReveal delay={2000} duration={3000}>
+          <ScrollReveal delay={2000} duration={2500}>
             <h4 className="text3">PRODUTOS QUÍMICOS</h4>
           </ScrollReveal>
         </div>
+
+        <img src={scrollGif} alt="gif de um rato a fazer scroll" className="scrollGif"/>
       </section>
 
       <div className="secHomeContainer">
+
+      <div className="fadeTransition"></div>
         <div className="secHomeContainerContent">
           <h3>
             Na <strong>U. T. Químicos, Lda</strong> dedicamo-nos à distribuição
             de produtos químicos e matérias primas para a indústria
-            transformadora.
+            transformadora
           </h3>
 
           <div className="bannerHomePage">
