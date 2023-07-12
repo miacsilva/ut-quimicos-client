@@ -782,9 +782,6 @@ header h1 {
   text-align: center;
 }
 
-.Nacionais{
-  margin-top: 5vw;
-}
 
 .partnersImagesCont{
   display: flex;
@@ -807,8 +804,63 @@ header h1 {
   margin-bottom: 40%;
 }
 
+@media (max-width: 550px){
+  #parceiros h2 {
+    font-size: 6svw;
+    padding: 4%;
+  }
 
+  .parceiros-section {
+    width: 100vw;
+    padding: 0;
+  }
 
+  .logo-container {
+    background: rgba(214, 229, 238, 0.915);
+    border-radius: 0px;
+    padding: 8%;
+    width: 100%;
+    margin: 0;
+    color: rgba(22, 45, 60, 0.925);
+  }
+
+  .logo-container h3{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 4.5vw 0vw;
+    text-align: center;
+  }
+
+  #parceiros header {
+    background-size: auto;
+    background-position-x: -370px;
+  }
+
+  .parceiros-logo {
+    max-height: 100%;
+    width:230px;
+    margin: 15px 15px;
+    object-fit:contain;
+  }
+  
+  .ecopower{
+    width:170px;
+  }
+
+  #parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(214, 229, 235);
+    background-color: (214, 229, 238, 0.915);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+}
 
 
 
@@ -820,7 +872,6 @@ background: rgb(255, 255, 255);
 background-image:url(/utq-Background-opacity.png);
 background-size: cover;
 background-attachment: fixed;
-
 }
 
 
@@ -894,7 +945,7 @@ background-attachment: fixed;
   margin-right: auto;
   margin-top: 7%;
   margin-bottom: 7%;
-  color: rgba(22, 45, 60, 0.925);;
+  color: rgba(22, 45, 60, 0.925);
 }
 
 .contactosTexto h5 {
@@ -903,8 +954,9 @@ background-attachment: fixed;
   font-size: 25px;
   margin-bottom: 40px;
   /* font-weight: bolder; */
-
 }
+
+
 .contactosTexto p {
   font-size: 13px;
   margin-bottom: 7px;
@@ -919,18 +971,18 @@ background-attachment: fixed;
 }
 
 @media (max-width: 550px) {
+
   #contactos h2 {
-    font-size: 5vw;
+    font-size: 6svw;
     padding: 4%;
   }
 
   .contactosTexto {
     flex-direction: column;
-    justify-content: space-around;
-    padding: 15px;
+    padding: 30px 15px 70px 15px;
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin:0%;
+    border-radius: 0;
   }
 
   .contactosTextoGroup {
@@ -942,6 +994,37 @@ background-attachment: fixed;
   #contactos header{
     background-size: auto
   }
+
+  .contactosTexto h5 {
+    color: rgba(22, 45, 60, 0.533);
+    font-size: 30px;
+  }
+
+  .contactosTexto p {
+    font-size: 17px;
+    margin-bottom: 7px;
+  }
+
+  .maps {
+    margin: 40px 0;
+}
+
+.maps h5{
+  letter-spacing: 5px;
+  margin: 0px 0 40px 0px;
+}
+
+
+.maps iframe {
+  border-radius: 40px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-width: 350px;
+  box-shadow: 10px 12px 10px 2px #94c4e478;
+}
+
 }
 
 /* 
@@ -1055,7 +1138,7 @@ background-attachment: fixed;
 }
 
 .input {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 14px;
   height: 34px;
   border-radius: 4px;
@@ -1074,17 +1157,17 @@ background-attachment: fixed;
   resize: none;
   background-color: rgba(208, 227, 244, 0.929);
   color:rgb(22, 45, 60);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .buttonForm {
-  height: 34px;
+  height: 40px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
   background-color: rgba(22, 45, 60, 0.904);
   backdrop-filter: blur(5px);
-  font-size: 18px;
+  font-size: 20px;
   transition: background-color, transform 0.8s;
   color: aliceblue;
 }
@@ -1097,13 +1180,37 @@ background-attachment: fixed;
 
 @media (max-width:600px){
 
-  .titleForm{
+  .titleForm {
+    margin: 40px 0;
     width:90%;
   }
 
   .containerForm{
     min-height: 70vh;
   }
+
+  .input {
+    font-size: 15px;
+    margin-bottom: 25px;
+    height: 45px;
+    background-color: rgba(208, 227, 244, 0.849);
+    color: rgb(22, 45, 60);;
+  }
+  
+  .textarea {
+    margin-bottom: 25px;
+    height: 120px;
+    resize:vertical;
+    font-size: 15px;
+  }
+
+  
+.buttonForm {
+  height: 50px;
+  backdrop-filter: blur(5px);
+  font-size: 25px;
+  margin-bottom: 15px;
+}
 
 }
 
@@ -1182,6 +1289,16 @@ background-attachment: fixed;
 .goSomewhereButton:hover {
   background-color: rgba(34, 67, 90, 0.903);;
   transform: scale(1.1);
+}
+
+@media (max-width: 550px){
+ .partnersBtn{
+  width: 55vw;
+  height: 50px;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
 }
 
 .link-underline{
