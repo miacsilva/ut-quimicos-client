@@ -17,11 +17,11 @@ function Home() {
   return (
     <>
       <section className="homeContainer">
-        <div className="homeLetters">
 
         <ScrollReveal delay={700} duration={1000}>
           <img className="logo text1" src={logo} alt="UT Químicos logotipo" />
 </ScrollReveal>
+        <div className="homeLetters">
           <ScrollReveal delay={1000} duration={2000}>
             <h5 className="text2">
               COMÉRCIO E <br /> DISTRIBUIÇÃO DE

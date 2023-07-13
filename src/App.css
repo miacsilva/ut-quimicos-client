@@ -190,7 +190,11 @@ body {
 .homeContainer {
   width: 100vw;
   display: flex; 
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   background-color: rgba(213, 230, 246, 0.766); 
   position: relative;
   height: 100vh;
@@ -201,8 +205,8 @@ body {
 }
 
 .logo {
-  height: 35em;
-  width:45em;
+  height: 23vw;
+  width:28vw;
   will-change: filter;
   transition: filter 300ms;
   display: block;
@@ -218,12 +222,12 @@ body {
 
 .text2{
   font-family: "Azoft Sans",  "azoft-sans", "Verdana" ;
-  font-size: 2rem;
+  font-size: 2.4vw;
   color:rgba(254, 254, 255, 0.922);
   margin-left: 00px;
 }
 .text3{
-  font-size: 4rem;
+  font-size: 4.8vw;
   color:rgb(150, 200, 249);
   letter-spacing: 9px;
   font-family: "Azoft Sans", "azoft-sans", "Verdana";
@@ -237,6 +241,7 @@ body {
   padding: 5%;
   padding-top: 10%;
   padding-bottom: 10%;
+  margin-right: 100px;
 }
 
 .scrollGif{
@@ -388,11 +393,52 @@ font-family: "Roboto", sans-serif;
 
 /* MEDIA QUERIES HomePage */
 
-@media (max-width:1000px){
-  
-  .cloudImg {
-    display: none;
+@media (max-width:550px){
+  .logo {
+    height: 60vw;
+    width:70vw;
+    display: block;
+    margin-bottom: 5%;
+    margin-right:100px;
   }
+
+  .homeLetters {
+    padding: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-right: 0px;
+  }
+
+  .secHomeContainerImageText{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produtosSquare h2, .contactosSquare h2{
+    letter-spacing: 3px;
+    white-space: pre-wrap;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .produtosSquare h2 span{
+    color:white;
+    font-size: 1.8rem;
+  }
+
+  .lastBannerHomePage{
+    height: 140vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .produtosSquare, .contactosSquare{
+
+    width: 100vw;
+   }
+}
+
+@media (max-width:1000px){
 
   .homeContainer h3 {
     font-size: 15vw;
