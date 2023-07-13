@@ -66,7 +66,7 @@ function Home() {
                 <div className="iconAndText">
                   <img src={exchange}></img>
 
-                  <ScrollReveal delay={1000} scale={1.5}>
+                  <ScrollReveal delay={700} scale={1.3}>
                     <h4>
                       Privilegiar/personalizar serviços e necessidades dos
                       clientes
@@ -77,7 +77,7 @@ function Home() {
 
               <div className="iconAndText">
                 <img src={handshake}></img>
-                <ScrollReveal delay={2000} scale={1.5}>
+                <ScrollReveal delay={1400} scale={1.3}>
                   <h4 className="bulletPoints">
                     {" "}
                     Fidelizar clientes e fornecedores
@@ -88,7 +88,7 @@ function Home() {
               <div className="iconAndText">
                 <img src={group}></img>
 
-                <ScrollReveal delay={3000} scale={1.5}>
+                <ScrollReveal delay={2100} scale={1.3}>
                   <h4>
                     {" "}
                     Estabelecer permanente contacto e relacionamento a longo

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from "/public/UTQ-logo.png"
 
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="brand-logo"> <a href="/">{/* <img className="logo" src={logo} alt="UT Químicos logotipo"/> */}</a> </div>
+      <div className="brand-logo"> <a href="/"><img className="navbarLogo" src={logo} alt="UT Químicos logotipo"/></a> </div>
        
         <a href="#" className={`toggle-button ${isActive ? "active" : ""}`} onClick={handleClick}>
           <span className="bar"></span>
@@ -22,11 +23,11 @@ function Navbar() {
      
       <div className={`navbar-navlinks ${isActive ? "active" : ""}`} >
             <ul>
-<li className='navItem'> <NavLink exact to="/" >Início</NavLink></li>
-<li className='navItem'> <NavLink to="/sobre"  >Sobre</NavLink></li>
-<li className='navItem'> <NavLink to="/produtos"  >Produtos</NavLink></li>
-<li className='navItem'> <NavLink to="/parceiros" >Parceiros</NavLink></li>
-<li className='navItem'> <NavLink className="nav-contactos" to="/contactos">Contactos</NavLink></li>
+<li className='navItem'> <NavLink exact to="/" onClick={handleClick}>Início</NavLink></li>
+<li className='navItem'> <NavLink to="/sobre" onClick={handleClick} >Sobre</NavLink></li>
+<li className='navItem'> <NavLink to="/produtos" onClick={handleClick} >Produtos</NavLink></li>
+<li className='navItem'> <NavLink to="/parceiros" onClick={handleClick}  >Parceiros</NavLink></li>
+<li className='navItem'> <NavLink className="nav-contactos" to="/contactos" onClick={handleClick} >Contactos</NavLink></li>
 
             </ul>
 
