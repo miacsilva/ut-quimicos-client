@@ -209,9 +209,8 @@ body {
   width:28vw;
   will-change: filter;
   transition: filter 300ms;
-  display: block;
+
   filter: brightness(170%);
-  margin-bottom: 5%;
   margin-left: 90px;
 }
 
@@ -239,8 +238,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 5%;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 0%;
   margin-right: 100px;
 }
 
