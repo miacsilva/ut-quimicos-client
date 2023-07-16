@@ -8,17 +8,16 @@ function Sobre() {
       </header>
       <section >
       <h3>A EMPRESA</h3>
-        <p className="sobreTexto"> Fundados em 2009, destacamo-nos no mercado enquanto empresa de distribuição de produtos químicos e matérias-primas dirigidas à indústria. A nossa rede de parcerias internacional permite-nos representar em Portugal várias empresas que se espalham pela União Europeia e Ásia.  </p> 
-        
-        <p className="sobreTexto">
+        <p className="sobreTexto"> Fundados em 2009, destacamo-nos no mercado como uma empresa de distribuição de produtos químicos e matérias-primas direcionadas à indústria. A nossa rede de parcerias internacionais permite-nos representar várias empresas sediadas na União Europeia e Ásia em Portugal. </p>
+        <p className="sobreTexto"> No âmago da empresa, concentramo-nos em matérias-primas de base, ou seja, especialidades químicas fornecidas às diversas indústrias para que possam produzir os produtos finais. Com escritórios em Braga, temos a nossa base logística em Santo Tirso através de um sistema de outsourcing de um armazém especializado em logística de produtos químicos. Esse armazém é responsável pela receção, armazenamento e envio de mercadorias para os nossos clientes.</p>
+<p className="sobreTexto">Devido à exigência técnica do setor químico, na UTQ acompanhamos continuamente as inovações da área para propormos e oferecermos a cada cliente as soluções mais adequadas para otimização dos seus processos produtivos. </p>
 
-No core da empresa centramo-nos em matérias-primas de base, ou seja, especialidades químicas que são fornecidas às diversas indústrias, para que estas produzam os produtos finais. Com escritórios em Braga, temos a nossa base de logística em Santo Tirso através de um sistema outsourcing de um armazém especializado em logística de produtos químicos, responsável pela receção, stockagem e envio de mercadorias para os nossos clientes. </p> 
+
 <p className="sobreTexto">
-
-Devido à exigência técnica do setor químico, na UTQ fazemos o acompanhamento contínuo às inovações da área de forma a propormos e oferecermos a cada cliente as soluções mais adequadas para a ótimização dos seus processos produtivos. </p>
-<p className="sobreTexto">
-
-Continuamos procurar crescer no setor enquanto empresa de referência, quer no profissionalismo como na qualidade. </p>
+Continuamos a procurar crescer no setor como uma empresa de referência, quer em profissionalismo, quer em qualidade. 
+</p>
+     
+     
       </section>
     
 
