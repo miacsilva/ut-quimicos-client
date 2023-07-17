@@ -216,13 +216,9 @@ body {
   margin-left: 90px;
 }
 
-/* @font-face {
-  font-family: ;
-  src: url();
-} */
 
 .text2{
-  font-family: "Azoft Sans",  "azoft-sans", "Verdana" ;
+  font-family: "AzoftSans",  "azoft-sans", "Verdana" ;
   font-size: 2.4vw;
   color:rgba(254, 254, 255, 0.922);
   margin-left: 00px;
@@ -231,7 +227,7 @@ body {
   font-size: 4.8vw;
   color:rgb(150, 200, 249);
   letter-spacing: 9px;
-  font-family: "Azoft Sans", "azoft-sans", "Verdana";
+  font-family: "AzoftSans", "azoft-sans", "Verdana";
   margin-left: 200px;
 }
 
