@@ -4,7 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
-
+@font-face {
+  font-family: "AzoftSans";
+  src: local("AzoftSans")
+  ,url(./fonts/AzoftSans/azoft-sans/(2).ttf) format("truetype");
+}
 
 .cores {
   color: #162d3c;
@@ -268,6 +272,7 @@ left: 50vw;
   height: 10vw;
   background: rgb(22,45,59);
 background: linear-gradient(0deg, rgba(22,45,59,0) 0%, rgba(22,45,59,0.6167717086834734) 51%, rgba(22,45,59,1) 95%);
+
 }
 
 .secHomeContainerContent{
@@ -480,8 +485,8 @@ font-family: "Roboto", sans-serif;
   height: 100%;
   margin: 0;
   font-size: 1rem;
-  /* font-family: "Roboto", sans-serif; */
   font-family: "Verdana";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.8em;
   color: rgba(22, 45, 59, 0.836);
@@ -849,7 +854,7 @@ font-family: "Roboto", sans-serif;
   white-space:pre-wrap;
   font-size: 1.2vw;
   letter-spacing: 2px;
-  margin-right: 20vw;
+  width: 50vw;
 
   
 }

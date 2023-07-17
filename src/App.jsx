@@ -22,7 +22,6 @@ import Contactos from "./pages/Contactos";
 import OutrasIndustrias from "./pages/outrasIndustrias";
 
 
-
 /* Layout */
 import RootLayout from './layouts/RootLayout.jsx';
 
