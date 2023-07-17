@@ -29,6 +29,7 @@ import RootLayout from './layouts/RootLayout.jsx';
 
 /* CSS */
 import "./App.css";
+import "./fonts/AzoftSans/azoft-sans(2).ttf"
 
 
 
