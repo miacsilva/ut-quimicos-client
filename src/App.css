@@ -486,6 +486,7 @@ font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.8em;
   color: rgba(22, 45, 59, 0.836);
+  width: 100vw;
 }
 
 .productsImg1,
