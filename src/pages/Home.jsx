@@ -19,7 +19,7 @@ function Home() {
       <section className="homeContainer">
 
         <ScrollReveal delay={700} duration={1000}>
-          <img className="logo text1" src={logo} alt="UT Químicos logotipo" />
+          <img className="logo" src={logo} alt="UT Químicos logotipo" />
 </ScrollReveal>
         <div className="homeLetters">
           <ScrollReveal delay={1000} duration={2000}>
