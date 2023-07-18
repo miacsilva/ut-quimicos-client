@@ -17,7 +17,7 @@ function Produtos() {
       </div>
       
       <section className="sectionP section-inicial">
-        <h2>Produtos para as aplicações nas mais diversas Indústrias</h2>
+        <h2>Produtos para aplicações nas mais diversas Indústrias</h2>
         <p>
           Na U. T. Químicos comercializamos produtos para os mais diversos fins, incidindo maioritáriamente na distribuíção de químicos para as indústrias das Tintas e Vernizes, dos Curtumes e dos Plásticos. 
         </p>

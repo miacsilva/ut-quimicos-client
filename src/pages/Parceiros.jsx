@@ -75,7 +75,7 @@ function Parceiros() {
         </div>
       </section>
 
-<Link to="/contactos" className="link-underline"><button className="goSomewhereButton partnersBtn"> Contacte-nos </button></Link>
+<Link to="/contactos" className="link-underline"><button className="goSomewhereButton partnersBtn">CONTACTE-NOS</button></Link>
 
 <ScrollRestoration/>
 
