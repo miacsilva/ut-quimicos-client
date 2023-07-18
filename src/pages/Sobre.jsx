@@ -4,7 +4,7 @@ function Sobre() {
 
     <div id="sobre">
     <header>
-        <h2>Sobre</h2>
+        <h2>QUEM SOMOS?</h2>
       </header>
       <section >
       <h3>A EMPRESA</h3>
@@ -20,12 +20,16 @@ function Sobre() {
      
       </section>
     
+    <div className="sobreBtnCont">
+
+    <button className="goSomewhereButton sobreBtns">PRODUTOS</button>
+    <button className="goSomewhereButton  sobreBtns">CONTACTE-NOS</button>
+
+    </div>
 
 
 
 
-    <button className="goSomewhereButton">PRODUTOS</button>
-    <button className="goSomewhereButton">CONTACTE-NOS</button>
     </div>
 
 
