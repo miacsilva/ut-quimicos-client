@@ -166,6 +166,14 @@ body {
   }
   .navbar-navlinks li {
     text-align: center;
+    background-color:#253e58e1;
+    width: 50vw;
+    position: relative;
+    right: -25vw;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    backdrop-filter: blur(5px);
+
   }
   .navbar-navlinks li a {
     padding: 0.5rem 1rem;
@@ -182,6 +190,7 @@ body {
     color: rgb(218, 216, 216);
     background-color: rgb(71, 119, 168);
     font-size: large;
+    border-radius: 10px;
   }
 }
 
