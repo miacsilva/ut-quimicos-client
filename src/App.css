@@ -398,22 +398,46 @@ font-family: "Roboto", sans-serif;
 }
 }
 
-@media (max-width:600px){
+@media (min-width:450px) and (max-width:600px){
+  
+}
 
+@media (max-width:600px){   /* MOBILE VERSION */
   .logo {
-    height: 60vw;
-    width:70vw;
-    display: block;
-    margin-bottom: 5%;
-    margin-right:100px;
+    height: 80vw;
+    width:95vw;
+    margin-left: 0px;
+  }
+  
+  .text2{
+    font-size: 4vw;
+    color:rgba(254, 254, 255, 0.922);
+    margin-left: 30px;
+    margin-top: 20vw;
+  }
+  .text3{
+    font-size: 6vw;
+    color:rgb(150, 200, 249);
+    letter-spacing: 9px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  .homeLetters {
+    padding: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 0px;
+    padding-left: 0vw;
   }
 
-  .homeLetters {
-    padding: 5%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-right: 0px;
-  }
+  .scrollGif{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    filter: invert(100) opacity(0.5);
+    bottom: 20px;
+    left: 50vw;
+    }
 
   .secHomeContainerImageText{
     display: flex;
@@ -480,7 +504,7 @@ font-family: "Roboto", sans-serif;
     text-align: center;}
 
     .bannerHomePage h2{
-     font-size: 5.5vw;
+     font-size: 5vw;
      padding: 0 20px;
      text-align:center;
      position: relative;
@@ -503,9 +527,37 @@ font-family: "Roboto", sans-serif;
       width: 10vw;
       filter:invert(10%);
     }
+}
 
-   
-
+@media (min-width:450px) and (max-width:600px) /* Tablet Version Homepage */
+{  
+  .logo {
+    height: 70vw;
+    width:80vw;
+    margin-left: 20px;
+    margin-bottom: -20px;
+  }
+  
+  .text2{
+    font-size: 4vw;
+    color:rgba(254, 254, 255, 0.922);
+    margin-left: 30px;
+    margin-top: 10vw;
+  }
+  .text3{
+    font-size: 6vw;
+    color:rgb(150, 200, 249);
+    letter-spacing: 9px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  .homeLetters {
+    padding: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 0px;
+    padding-left: 0vw;
+  }
 }
 
 
