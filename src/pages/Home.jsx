@@ -41,7 +41,7 @@ function Home() {
         <div className="secHomeContainerContent">
           <h3>
             Na <strong>U. T. Químicos, Lda</strong> dedicamo-nos à distribuição
-            de produtos químicos e matérias primas para a indústria
+            de produtos químicos e matérias-primas para a indústria
             transformadora
           </h3>
 
@@ -51,7 +51,7 @@ function Home() {
 
           </div>
 
-          <h3>
+          
             <div className="secHomeContainerImageText">
              {/*  <ScrollReveal>
                 {/* <img src={jars} alt="Fracos Pigmentados" className="jarImg" /> }
@@ -68,7 +68,7 @@ function Home() {
 
                   <ScrollReveal delay={700} scale={1.3}>
                     <h4>
-                      Privilegiar/personalizar serviços e necessidades dos
+                      Privilegiar / personalizar serviços e necessidades dos
                       clientes
                     </h4>
                   </ScrollReveal>
@@ -97,7 +97,6 @@ function Home() {
                 </ScrollReveal>
               </div>
             </div>
-          </h3>
 
             <div className="lastBannerHomePage">
 

@@ -290,25 +290,16 @@ background: linear-gradient(0deg, rgba(22,45,59,0) 0%, rgba(22,45,59,0.616771708
   margin-top: 70px;
   line-height: 40px;
   text-align: center;
-  /* background-image: URL("/public/blue-textura.jpg"); */
- /*  background-color: #ffffff;
-  background-color: rgba(195, 213, 231, 0.208); */ 
-  border-radius: 10px;
   color:#243b55;
   padding: 60px 60px 60px 60px;
-  backdrop-filter: blur(3px);
-/*   -webkit-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
--moz-box-shadow: 16px 20px 58px -3px rgba(36,59,85,0.44);
-box-shadow: 16px 20px 58px -3px rgba(36,59,850.44); */
 font-family: "Roboto", sans-serif;
-
 }
 
 .bannerHomePage{
   background-image: url(/public/poCoresCroppedDark.jpg);
   background-position-y: -20px;
   background-attachment: fixed;
-  height: 5vw;
+  height: 7vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,7 +312,7 @@ font-family: "Roboto", sans-serif;
 .secHomeContainerImageText{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-around;
 }
 
 .colormix {
@@ -392,7 +383,14 @@ font-family: "Roboto", sans-serif;
 
 /* MEDIA QUERIES HomePage */
 
-@media (max-width:550px){
+@media (min-width:1000px){
+  .text3{
+    width: 100vw;
+}
+}
+
+@media (max-width:600px){
+
   .logo {
     height: 60vw;
     width:70vw;
@@ -430,21 +428,11 @@ font-family: "Roboto", sans-serif;
     height: 140vw;
     display: flex;
     flex-direction: column;
+    margin-top: 10vw;
   }
   .produtosSquare, .contactosSquare{
-
     width: 100vw;
    }
-}
-
-
-@media (min-width:1000px){
-  .text3{
-    width: 100vw;
-}
-}
-
-@media (max-width:600px){
 
   .homeContainer h3 {
     font-size: 15vw;
@@ -458,22 +446,56 @@ font-family: "Roboto", sans-serif;
     font-size: 2.5vw;
     margin: 10vw 3vw 8vw 5vw;
     padding: 60px 60px 40px 60px;
+    
+  }
+
+  .secHomeContainerContent h3{
+    font-size: 3.5vw;
+    margin: 0;
+    margin-top: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#243b55;
+    padding: 50px 50px 50px 50px;
   }
   
   .secHomeContainer h4{
-    font-size: 3.3vw;
+    font-size: 4vw;
     font-family: "Roboto", sans-serif;
   }
 
-  .iconAndText{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    align-self: center;
-    margin-bottom: 10px;
-    text-align: left;
-  }
+  
 
+  .bannerHomePage{
+    height: 35vw;
+    text-align: center;}
+
+    .bannerHomePage h2{
+     font-size: 5.5vw;
+     padding: 0 20px;
+     text-align:center;
+     position: relative;
+     bottom: -8vw;
+    }
+
+    .iconAndText{
+      display: flex;
+      gap: 30px;
+      margin-top: 10vw;
+      position: relative;
+    }
+
+    .iconAndText h4{
+      color:#243b55;
+      width: 40vw;
+      font-size:3.5vw;
+    }
+    .iconAndText img{
+      width: 10vw;
+      filter:invert(10%);
+    }
+
+   
 
 }
 
