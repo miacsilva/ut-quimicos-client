@@ -398,9 +398,6 @@ font-family: "Roboto", sans-serif;
 }
 }
 
-@media (min-width:450px) and (max-width:600px){
-  
-}
 
 @media (max-width:600px){   /* MOBILE VERSION */
   .logo {
@@ -419,7 +416,7 @@ font-family: "Roboto", sans-serif;
     font-size: 6vw;
     color:rgb(150, 200, 249);
     letter-spacing: 9px;
-    margin-left: 50px;
+    margin-left: 4.5vw;
     text-align: center;
   }
   .homeLetters {
@@ -432,11 +429,11 @@ font-family: "Roboto", sans-serif;
 
   .scrollGif{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 13vw;
+    height: 13vw;
     filter: invert(100) opacity(0.5);
     bottom: 20px;
-    left: 50vw;
+    left: 42vw;
     }
 
   .secHomeContainerImageText{
@@ -548,7 +545,7 @@ font-family: "Roboto", sans-serif;
     font-size: 6vw;
     color:rgb(150, 200, 249);
     letter-spacing: 9px;
-    margin-left: 50px;
+    margin-left: 4.5vw;
     text-align: center;
   }
   .homeLetters {
