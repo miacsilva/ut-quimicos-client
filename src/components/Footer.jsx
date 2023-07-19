@@ -38,7 +38,7 @@ function Footer() {
 
         <div className="footerCopyright">
             <hr/>
-        <p>Copyright © 2023 U.T. Químicos, Lda – Designed by <span>Maria Carvalho</span></p></div>
+        <p>Copyright © 2023 U.T. Químicos, Lda – Developed & Designed by <a href="https://www.linkedin.com/in/maria-s-carvalho/" alt="Maria Carvalho Linkdin profile">Maria Carvalho</a></p></div>
       </div>
     </>
   )

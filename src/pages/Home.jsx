@@ -68,7 +68,7 @@ function Home() {
 
                   <ScrollReveal delay={700} scale={1.3}>
                     <h4>
-                      Privilegiar / personalizar serviços e necessidades dos
+                      Privilegiar e personalizar serviços e necessidades dos
                       clientes
                     </h4>
                   </ScrollReveal>
@@ -91,7 +91,7 @@ function Home() {
                 <ScrollReveal delay={2100} scale={1.3}>
                   <h4>
                     {" "}
-                    Estabelecer permanente contacto e relacionamento a longo
+                    Contacto permanente e relacionamento a longo
                     prazo entre clientes e fornecedores
                   </h4>
                 </ScrollReveal>
