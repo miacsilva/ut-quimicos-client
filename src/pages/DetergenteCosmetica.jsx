@@ -3,7 +3,7 @@
 function DetergenteCosmetica() {
   return (
     <div>
-    <header className="singleProductHeader SP6">
+    <header className="singleProductHeader SP6 bigTitleSinglePage2">
       <h1>Detergentes e Cósmetica</h1>
     </header>
 

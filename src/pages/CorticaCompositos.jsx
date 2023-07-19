@@ -4,7 +4,7 @@ function CorticaCompositos() {
   return (
     <div>
     <ScrollBackUp/>
-      <header className="singleProductHeader SP5">
+      <header className="singleProductHeader SP5 bigTitleSinglePage">
         <h1>Cortiça e Compósitos</h1>
       </header>
 
