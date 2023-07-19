@@ -205,6 +205,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+ 
 }
 
 .logo {
@@ -256,6 +257,10 @@ body {
   text-align: justify;
   color: #243c4c;
   background-color: rgba(222, 228, 227, 255);
+  background-image: url(/backgroundNovo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*   background-attachment: fixed; */
 }
 
 .fadeTransition {
@@ -900,7 +905,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: rgb(255, 255, 255);
-  background-image: url(/utq-Background-opacity.png);
+  background-image: url(/backgroundNovo.png);
   background-size: cover;
   background-attachment: fixed;
   font-family: "Roboto", "Verdana";
@@ -915,6 +920,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(104, 98, 98);
   background-image: URL("/sobre2.jpg");
   background-size: cover;
 }
@@ -953,6 +959,10 @@ body {
   letter-spacing: 2px;
   width: 50vw;
   color: #162d3be2;
+}
+
+.sobreBtnCont{
+  margin-bottom: 5vw;
 }
 
 @media (max-width: 600px) {
@@ -1003,22 +1013,23 @@ header h1 {
   flex-direction: column;
   align-items: center;
   background: rgb(255, 255, 255);
-  background-image: url(/utq-Background-opacity.png);
+  background-image: url(/backgroundNovo.png);
   background-size: cover;
   background-attachment: fixed;
+ 
 }
 
 #parceiros header {
   width: 100svw;
   max-height: 40vh;
   position: relative;
-  background-position: 0rem;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(104, 98, 98);
   background-image: URL("/handshakeHeaderOp.png");
   background-size: cover;
+  background-position-y: 25%;
 }
 
 #parceiros h2 {
@@ -1153,7 +1164,7 @@ header h1 {
 /* -------------Contactos------------------- */
 #contactos {
   background: rgb(255, 255, 255);
-  background-image: url(/utq-Background-opacity.png);
+  background-image: url(/backgroundNovo.png);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1333,6 +1344,7 @@ header h1 {
   flex-direction: row;
   width: 100%;
   text-align: left;
+  position: relative;
 }
 
 .footerLinksLogo img {
@@ -1355,13 +1367,15 @@ header h1 {
   font-size: 20px;
   line-height: 16px;
   margin-bottom: 1.6rem;
+  color: #eaebed;
 }
 
-.footerLinksColunas p {
+p .footerLinksColunas {
   font-size: 12px;
   line-height: 14px;
   margin: 0.5rem 0;
   cursor: pointer;
+  color: #eaebed;
 }
 
 .footerCopyright {
@@ -1379,6 +1393,20 @@ header h1 {
   border: 10px solid black;
   border-radius: 5px;
 }
+
+.pFooterLinks{
+  color: #eaebed;
+  transition:ease 0.3s;
+ }
+.pFooterLinks:hover{
+  transform: scale(1.02, 1.2);
+  color: #aec4eb;;
+ }
+
+.logoFooter{
+  filter: brightness(150%);
+}
+
 
 /* ---------Message Form------------ */
 
@@ -1485,6 +1513,9 @@ header h1 {
     font-size: 25px;
     margin-bottom: 15px;
   }
+
+
+ 
 }
 
 /* ---------Message Form--END---------- */
@@ -1555,12 +1586,20 @@ header h1 {
   align-items: center;
   width: 15vw;
   justify-content: center;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .goSomewhereButton:hover {
   background-color: rgba(34, 67, 90, 0.903);
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+.sobreBtns {
+  width:30vw;
+  height:3vw;
+  margin-bottom: 1vw;
+  letter-spacing: 0.4vw;
+  font-size: 1.2vw;
+  border-radius: 30px;
 }
 
 @media (max-width: 600px) {
@@ -1576,9 +1615,18 @@ header h1 {
     width: 70vw;
     margin-bottom: 3vw;
     letter-spacing: 1.8vw;
+    font-size: 4vw;
+    padding: 4vw;
+    border-radius: 3px;
   }
 }
 
 .link-underline {
   text-decoration: none;
 }
+
+a.anchorFooter{
+  text-decoration: none;
+  color: #538dc7;
+}
+
