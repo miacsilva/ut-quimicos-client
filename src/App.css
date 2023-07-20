@@ -1636,7 +1636,7 @@ display: none;
   height:3vw;
   letter-spacing: 0.4vw;
  /*  font-size: 1.2vw; */
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .partnersBtn {
@@ -1645,7 +1645,7 @@ display: none;
   margin-bottom: 5vw;
   letter-spacing: 0.4vw;
   font-size: clamp(20px,1.2vw,30px);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .sobreBtns {
   width:clamp(300px,30vw,500px);
