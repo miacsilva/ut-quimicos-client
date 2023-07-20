@@ -205,7 +205,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
- 
+  overflow-x:hidden;
 }
 
 .logo {
@@ -223,13 +223,7 @@ body {
   color: rgba(254, 254, 255, 0.922);
   margin-left: 00px;
 }
-.text3 {
-  font-size: 4.8vw;
-  color: rgb(150, 200, 249);
-  letter-spacing: 9px;
-  font-family: "AzoftSans", "azoft-sans", "Verdana";
-  margin-left: 200px;
-}
+
 
 .homeLetters {
   display: flex;
@@ -239,6 +233,21 @@ body {
   padding-bottom: 0%;
   margin-right: 100px;
   padding-left: 15vw;
+}
+
+.text3 {
+  font-size: 4.8vw;
+  color: rgb(150, 200, 249);
+  letter-spacing: 9px;
+  font-family: "AzoftSans", "azoft-sans", "Verdana";
+  margin-left: -10vw;
+  text-align: center;
+}
+
+@media (min-width:820px) and (max-width:1000px){
+  .text3{
+    margin-left: 0vw;
+  }
 }
 
 .scrollGif {
@@ -965,7 +974,7 @@ body {
 
 .sobreTexto {
   white-space: pre-wrap;
-  font-size: 1.2vw;
+  font-size: clamp(18px,1.2vw,25px);
   letter-spacing: 2px;
   width: 50vw;
   color: #162d3be2;
@@ -1106,9 +1115,7 @@ header h1 {
   width: 100px;
 }
 
-.partnersBtn {
-  margin-bottom: 40%;
-}
+
 
 @media (max-width: 600px) {
   #parceiros h2 {
@@ -1212,7 +1219,7 @@ header h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  color: white;
+  color: #162d3b;
 }
 
 .maps iframe {
@@ -1235,7 +1242,6 @@ header h1 {
 }
 
 .contactosTexto {
-  background: rgba(214, 229, 238, 0.915);
   border-radius: 15px;
   /*   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1251,7 +1257,7 @@ header h1 {
 }
 
 .contactosTexto h5 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
   font-size: 25px;
   margin-bottom: 40px;
@@ -1259,8 +1265,9 @@ header h1 {
 }
 
 .contactosTexto p {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 7px;
+  font-family: "Roboto", sans-serif;
 }
 
 .contactosTextoGroup {
@@ -1271,7 +1278,7 @@ header h1 {
   margin-top: 30px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   #contactos h2 {
     font-size: 6svw;
     padding: 4%;
@@ -1296,12 +1303,12 @@ header h1 {
   }
 
   .contactosTexto h5 {
-    color: rgba(22, 45, 60, 0.533);
-    font-size: 30px;
+    color: rgba(22, 45, 60, 0.74);
+    font-size: 6vw;
   }
 
   .contactosTexto p {
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 7px;
   }
 
@@ -1317,8 +1324,9 @@ header h1 {
   .maps iframe {
     border-radius: 40px;
     margin-top: 0px;
-    margin-bottom: 35px;
-    width: 100%;
+    margin-bottom: 15vw;
+    width: 80vw;
+    height: 80vw;
     aspect-ratio: 16/9;
     max-width: 350px;
     box-shadow: 10px 12px 10px 2px #94c4e478;
@@ -1395,7 +1403,7 @@ p .footerLinksColunas {
 }
 
 .footerCopyright p {
-  font-size: 10px;
+  font-size: clamp(10px,2vw,10px);
   line-height: 10px;
 }
 
@@ -1416,6 +1424,7 @@ p .footerLinksColunas {
 .logoFooter{
   filter: brightness(150%);
 }
+
 
 
 /* ---------Message Form------------ */
@@ -1523,15 +1532,37 @@ p .footerLinksColunas {
     font-size: 25px;
     margin-bottom: 15px;
   }
-
-
  
+}
+
+@media(min-width:443px){
+  .footerCopyright br{
+display: none;
+  }
+}
+@media(max-width:443px){
+  .footerCopyright span{
+    display: none;
+  }
+
+  .footerCopyright p{
+    margin-bottom: 20px;
+  }
+  .footerCopyright br{
+    line-height: 0px;
+      }
+  
 }
 
 /* ---------Message Form--END---------- */
 
+
 /* media queries FOOTER */
-@media (max-width: 550px) {
+@media(max-width:830px){
+  .footerLinks{
+    flex-direction: column;
+    padding-left: 20px;
+  }
   .footerLinksColunas {
     margin: 1rem 0;
   }
@@ -1553,9 +1584,7 @@ p .footerLinksColunas {
     font-size: 12px;
     line-height: 15px;
   }
-  .footerLinks {
-    flex-direction: column;
-  }
+ 
 
   .footerLinksLogo img {
     height: 20vh;
@@ -1563,6 +1592,7 @@ p .footerLinksColunas {
     margin: 20px;
   }
 }
+
 
 /* ----------------- Footer END--------------------*/
 
@@ -1602,15 +1632,37 @@ p .footerLinksColunas {
 .goSomewhereButton:hover {
   background-color: rgba(34, 67, 90, 0.903);
   transform: scale(1.05);
-}
-.sobreBtns {
   width:30vw;
   height:3vw;
-  margin-bottom: 1vw;
   letter-spacing: 0.4vw;
-  font-size: 1.2vw;
-  border-radius: 30px;
+ /*  font-size: 1.2vw; */
+  border-radius: 10px;
 }
+
+.partnersBtn {
+  width:clamp(300px,30vw,500px);
+  height:clamp(40px,3vw,80px);
+  margin-bottom: 5vw;
+  letter-spacing: 0.4vw;
+  font-size: clamp(20px,1.2vw,30px);
+  border-radius: 10px;
+}
+.sobreBtns {
+  width:clamp(300px,30vw,500px);
+  height:clamp(40px,3vw,80px);
+  margin-bottom: 1.5vw;
+  letter-spacing: 0.4vw;
+  font-size: clamp(20px,1.2vw,30px);
+  border-radius: 5px;
+}
+
+@media (min-width: 601px) and (max-width: 850px){
+  .partnersBtn {
+    margin:30px 0 50px 0;
+  }
+
+}
+
 
 @media (max-width: 600px) {
   .partnersBtn {

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function Sobre() {
   return (
@@ -22,8 +23,9 @@ function Sobre() {
     
     <div className="sobreBtnCont">
 
-    <button className="goSomewhereButton sobreBtns">PRODUTOS</button>
-    <button className="goSomewhereButton  sobreBtns">CONTACTE-NOS</button>
+    <Link to="/produtos" className="link-underline"><button className="goSomewhereButton sobreBtns">PRODUTOS</button></Link>
+    <Link to="/contactos" className="link-underline"><button className="goSomewhereButton  sobreBtns">CONTACTE-NOS</button></Link>
+
 
     </div>
 

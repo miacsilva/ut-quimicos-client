@@ -1,7 +1,7 @@
 function OutrasIndustrias() {
     return (
       <div>
-      <header className="singleProductHeader bigTitleSinglePage1 SP7">
+      <header className="singleProductHeader bigTitleSinglePage2 SP7">
         <h1>Outras Indústrias</h1>
       </header>
   
