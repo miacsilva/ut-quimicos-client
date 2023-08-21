@@ -63,7 +63,7 @@ function ContactForm() {
         Necessita de alguma informação ou quer ser contactado?
         <br></br>
          Deixe-nos uma mensagem!
-        Responderemos com a máxima brevidade
+        Responderemos com a máxima brevidade.
       </h1>
 
     

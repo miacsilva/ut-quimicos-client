@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from "/public/UTQ-logo.png"
+import logo from "/UTQ-logo.png"
 
 
 function Navbar() {

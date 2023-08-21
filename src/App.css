@@ -309,7 +309,7 @@ body {
 }
 
 .bannerHomePage {
-  background-image: url(/public/poCoresCroppedDark.jpg);
+  background-image: url(/poCoresCroppedDark.jpg);
   background-position-y: -20px;
   background-attachment: fixed;
   height: 7vw;
@@ -403,9 +403,11 @@ body {
 @media (max-width: 600px) {
   /* MOBILE VERSION */
   .logo {
-    height: 80vw;
-    width: 95vw;
+    margin-top: 50px;
+    height: 75vw;
+    width: 90vw;
     margin-left: 0px;
+    margin-bottom:-20px;
   }
 
   .text2 {
@@ -1286,10 +1288,11 @@ header h1 {
 
   .contactosTexto {
     flex-direction: column;
-    padding: 30px 15px 70px 15px;
+    padding: 30px 15px 50px 15px;
     width: 100%;
     margin: 0%;
     border-radius: 0;
+    gap:50px;
   }
 
   .contactosTextoGroup {
@@ -1400,6 +1403,7 @@ p .footerLinksColunas {
   margin-top: 2rem;
   text-align: center;
   width: 100%;
+  color: #eaebed51;
 }
 
 .footerCopyright p {
@@ -1424,6 +1428,28 @@ p .footerLinksColunas {
 .logoFooter{
   filter: brightness(150%);
 }
+
+
+@media(min-width:443px){
+  .footerCopyright br{
+display: none;
+  }
+}
+
+
+@media(max-width:443px){
+  .footerCopyright span{
+    display: none;
+  }
+
+  .footerCopyright p{
+    margin-bottom: 20px;
+  }
+  
+
+  
+}
+
 
 
 
@@ -1527,31 +1553,12 @@ p .footerLinksColunas {
   }
 
   .buttonForm {
-    height: 50px;
+    height: 45px;
     backdrop-filter: blur(5px);
-    font-size: 25px;
+    font-size: 21px;
     margin-bottom: 15px;
   }
  
-}
-
-@media(min-width:443px){
-  .footerCopyright br{
-display: none;
-  }
-}
-@media(max-width:443px){
-  .footerCopyright span{
-    display: none;
-  }
-
-  .footerCopyright p{
-    margin-bottom: 20px;
-  }
-  .footerCopyright br{
-    line-height: 0px;
-      }
-  
 }
 
 /* ---------Message Form--END---------- */
