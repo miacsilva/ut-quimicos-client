@@ -31,7 +31,7 @@ function Home() {
           </ScrollReveal>
         </div>
 
-        <img src={scrollGif} alt="gif de um rato a fazer scroll" className="scrollGif"/>
+        <img src={scrollGif} alt="gif de um rato de computador a fazer scroll" className="scrollGif"/>
       </section>
 
       <div className="secHomeContainer">

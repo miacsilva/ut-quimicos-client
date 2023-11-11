@@ -54,7 +54,7 @@ function Contactos() {
           <ScrollReveal delay={300}>
           <div className="maps">
             <div className="officeMap">
-              <h5>Escritório</h5>
+             {/*  <h5>Escritório</h5> */}
 
               <iframe
                 title="Google Maps"
@@ -67,7 +67,7 @@ function Contactos() {
             </div>
 
             <div className="warehouseMap">
-              <h5>Armazém</h5>
+            {/*   <h5>Armazém</h5> */}
 
               <iframe
                 width="350"

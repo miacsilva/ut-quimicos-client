@@ -265,7 +265,7 @@ body {
   position: relative;
   text-align: justify;
   color: #243c4c;
-  background-color: rgba(222, 228, 227, 255);
+  background-color: white;
   background-image: url(/backgroundNovo.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -558,7 +558,18 @@ body {
   }
 }
 
-/* ---- Produtos Parallax efexr ---------*/
+@media (max-width: 1000px){
+  .bannerHomePage {
+    height: clamp(14px,35vw,200px);
+    text-align: center;
+    background-size: cover;
+
+  }
+}
+
+
+
+/* ---- Produtos Parallax effect ---------*/
 .Produtos {
   height: 100%;
   margin: 0;
@@ -1233,7 +1244,7 @@ header h1 {
   max-width: 350px;
   box-shadow: 10px 12px 10px 2px #94c4e478;
 }
-
+/* 
 .maps h5 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
@@ -1242,7 +1253,7 @@ header h1 {
   margin-bottom: 40px;
   text-align: center;
 }
-
+ */
 .contactosTexto {
   border-radius: 15px;
   /*   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
@@ -1261,7 +1272,7 @@ header h1 {
 .contactosTexto h5 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 40px;
   /* font-weight: bolder; */
 }
