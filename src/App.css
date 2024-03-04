@@ -138,7 +138,6 @@ body {
 }
 
 @media (max-width: 950px) {
-  
   .toggle-button {
     display: flex;
   }
@@ -205,7 +204,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -223,7 +222,6 @@ body {
   color: rgba(254, 254, 255, 0.922);
   margin-left: 00px;
 }
-
 
 .homeLetters {
   display: flex;
@@ -244,8 +242,8 @@ body {
   text-align: center;
 }
 
-@media (min-width:820px) and (max-width:1000px){
-  .text3{
+@media (min-width: 820px) and (max-width: 1000px) {
+  .text3 {
     margin-left: 0vw;
   }
 }
@@ -269,7 +267,7 @@ body {
   background-image: url(/backgroundNovo.png);
   background-repeat: no-repeat;
   background-size: cover;
-/*   background-attachment: fixed; */
+  /*   background-attachment: fixed; */
 }
 
 .fadeTransition {
@@ -407,7 +405,7 @@ body {
     height: 75vw;
     width: 90vw;
     margin-left: 0px;
-    margin-bottom:-20px;
+    margin-bottom: -20px;
   }
 
   .text2 {
@@ -512,7 +510,7 @@ body {
   .iconAndText {
     display: flex;
     gap: 30px;
-    margin:0;
+    margin: 0;
     margin-top: 10vw;
     position: relative;
   }
@@ -558,16 +556,13 @@ body {
   }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .bannerHomePage {
-    height: clamp(14px,35vw,200px);
+    height: clamp(14px, 35vw, 200px);
     text-align: center;
     background-size: cover;
-
   }
 }
-
-
 
 /* ---- Produtos Parallax effect ---------*/
 .Produtos {
@@ -592,20 +587,20 @@ body {
 .productsImg8 {
   position: relative;
   opacity: 0.85;
-  background-position: 0rem; 
-  background-repeat: no-repeat; 
+  background-position: 0rem;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .productsImg1 {
-  background-image: url("/tubosDeEnsaio.jpg") ;
+  background-image: url("/tubosDeEnsaio.jpg");
   min-height: 100vh;
-  background-size: cover; 
+  background-size: cover;
 }
 .productsImg2 {
-  background-image: url("/Brochura.jpg") ;
+  background-image: url("/Brochura.jpg");
   min-height: 40vh;
   background-size: cover;
   -webkit-background-size: cover;
@@ -731,7 +726,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-
   .scrollDown {
     display: none;
   }
@@ -745,7 +739,7 @@ body {
     font-size: 20px;
   }
 
-  .sectionP{
+  .sectionP {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -759,10 +753,10 @@ body {
   .section-dark {
     padding: 2vw 0 2vw;
   }
-  
+
   .productsText {
     letter-spacing: 5px;
-    font-size: 100%; 
+    font-size: 100%;
   }
 
   .productsText .border3 {
@@ -777,21 +771,22 @@ body {
   .productsImg1 {
     min-height: 50svh;
     background-position: -90vw;
+    background-attachment: scroll;
   }
 
-.productsImg2,
-.productsImg3,
-.productsImg4,
-.productsImg5,
-.productsImg6,
-.productsImg7,
-.productsImg8{
-  min-height: 25vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-attachment: scroll;
-}
+  .productsImg2,
+  .productsImg3,
+  .productsImg4,
+  .productsImg5,
+  .productsImg6,
+  .productsImg7,
+  .productsImg8 {
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll;
+  }
 }
 
 /* ---- Produtos Parallax efexr--END----------*/
@@ -891,7 +886,6 @@ body {
 }
 
 @media (max-width: 600px) {
-
   .singleProductHeader h1 {
     font-size: 10vw;
     color: rgba(22, 45, 59);
@@ -906,7 +900,7 @@ body {
     width: 75vw;
   }
   .cardsProducts h2 {
-    font-size: clamp(14px,6vw, 25px) ;
+    font-size: clamp(14px, 6vw, 25px);
     text-align: center;
     margin-bottom: 20px;
   }
@@ -916,18 +910,28 @@ body {
 
   .cardsProducts li {
     margin-bottom: 10px;
-    font-size:clamp(12px,4vw, 18px);
+    font-size: clamp(12px, 4vw, 18px);
   }
 
-  .bigTitleSinglePage h1{
+  .bigTitleSinglePage h1 {
     font-size: 9vw;
-    letter-spacing: 10px ;
+    letter-spacing: 10px;
   }
-  .bigTitleSinglePage2 h1{
+  .bigTitleSinglePage2 h1 {
     font-size: 8vw;
-    letter-spacing: 10px ;
+    letter-spacing: 10px;
   }
 
+  .SP1,
+  .SP2,
+  .SP3,
+  .SP4,
+  .SP5,
+  .SP6,
+  .SP7 {
+    background-attachment: scroll;
+    background-size: 250%;
+  }
 }
 
 /* ---------------------Sobre---------------------- */
@@ -987,13 +991,13 @@ body {
 
 .sobreTexto {
   white-space: pre-wrap;
-  font-size: clamp(18px,1.2vw,25px);
+  font-size: clamp(18px, 1.2vw, 25px);
   letter-spacing: 2px;
   width: 50vw;
   color: #162d3be2;
 }
 
-.sobreBtnCont{
+.sobreBtnCont {
   margin-bottom: 5vw;
 }
 
@@ -1048,7 +1052,6 @@ header h1 {
   background-image: url(/backgroundNovo.png);
   background-size: cover;
   background-attachment: fixed;
- 
 }
 
 #parceiros header {
@@ -1134,8 +1137,6 @@ header h1 {
   width: 100px;
 }
 
-
-
 @media (max-width: 600px) {
   #parceiros h2 {
     font-size: 6svw;
@@ -1191,8 +1192,6 @@ header h1 {
     background-size: cover;
     background-attachment: fixed;
   }
-
-  
 }
 
 /* ---------------Parceiros END--------------- */
@@ -1309,7 +1308,7 @@ header h1 {
     width: 100%;
     margin: 0%;
     border-radius: 0;
-    gap:50px;
+    gap: 50px;
   }
 
   .contactosTextoGroup {
@@ -1361,7 +1360,7 @@ header h1 {
 /* ----------------- Footer --------------------*/
 
 .footer {
- width: 100vw;
+  width: 100vw;
   color: white;
   display: flex;
   flex-direction: column;
@@ -1424,7 +1423,7 @@ p .footerLinksColunas {
 }
 
 .footerCopyright p {
-  font-size: clamp(10px,2vw,10px);
+  font-size: clamp(10px, 2vw, 10px);
   line-height: 10px;
 }
 
@@ -1433,42 +1432,34 @@ p .footerLinksColunas {
   border-radius: 5px;
 }
 
-.pFooterLinks{
+.pFooterLinks {
   color: #eaebed;
-  transition:ease 0.3s;
- }
-.pFooterLinks:hover{
+  transition: ease 0.3s;
+}
+.pFooterLinks:hover {
   transform: scale(1.02, 1.2);
-  color: #aec4eb;;
- }
+  color: #aec4eb;
+}
 
-.logoFooter{
+.logoFooter {
   filter: brightness(150%);
 }
 
-
-@media(min-width:443px){
-  .footerCopyright br{
-display: none;
+@media (min-width: 443px) {
+  .footerCopyright br {
+    display: none;
   }
 }
 
-
-@media(max-width:443px){
-  .footerCopyright span{
+@media (max-width: 443px) {
+  .footerCopyright span {
     display: none;
   }
 
-  .footerCopyright p{
+  .footerCopyright p {
     margin-bottom: 20px;
   }
-  
-
-  
 }
-
-
-
 
 /* ---------Message Form------------ */
 
@@ -1575,15 +1566,13 @@ display: none;
     font-size: 21px;
     margin-bottom: 15px;
   }
- 
 }
 
 /* ---------Message Form--END---------- */
 
-
 /* media queries FOOTER */
-@media(max-width:830px){
-  .footerLinks{
+@media (max-width: 830px) {
+  .footerLinks {
     flex-direction: column;
     padding-left: 20px;
   }
@@ -1608,7 +1597,6 @@ display: none;
     font-size: 12px;
     line-height: 15px;
   }
- 
 
   .footerLinksLogo img {
     height: 20vh;
@@ -1616,7 +1604,6 @@ display: none;
     margin: 20px;
   }
 }
-
 
 /* ----------------- Footer END--------------------*/
 
@@ -1656,37 +1643,35 @@ display: none;
 .goSomewhereButton:hover {
   background-color: rgba(34, 67, 90, 0.903);
   transform: scale(1.05);
-  width:30vw;
-  height:3vw;
+  width: 30vw;
+  height: 3vw;
   letter-spacing: 0.4vw;
- /*  font-size: 1.2vw; */
+  /*  font-size: 1.2vw; */
   border-radius: 5px;
 }
 
 .partnersBtn {
-  width:clamp(300px,30vw,500px);
-  height:clamp(40px,3vw,80px);
+  width: clamp(300px, 30vw, 500px);
+  height: clamp(40px, 3vw, 80px);
   margin-bottom: 5vw;
   letter-spacing: 0.4vw;
-  font-size: clamp(20px,1.2vw,30px);
+  font-size: clamp(20px, 1.2vw, 30px);
   border-radius: 5px;
 }
 .sobreBtns {
-  width:clamp(300px,30vw,500px);
-  height:clamp(40px,3vw,80px);
+  width: clamp(300px, 30vw, 500px);
+  height: clamp(40px, 3vw, 80px);
   margin-bottom: 1.5vw;
   letter-spacing: 0.4vw;
-  font-size: clamp(20px,1.2vw,30px);
+  font-size: clamp(20px, 1.2vw, 30px);
   border-radius: 5px;
 }
 
-@media (min-width: 601px) and (max-width: 850px){
+@media (min-width: 601px) and (max-width: 850px) {
   .partnersBtn {
-    margin:30px 0 50px 0;
+    margin: 30px 0 50px 0;
   }
-
 }
-
 
 @media (max-width: 600px) {
   .partnersBtn {
@@ -1711,8 +1696,7 @@ display: none;
   text-decoration: none;
 }
 
-a.anchorFooter{
+a.anchorFooter {
   text-decoration: none;
   color: #538dc7;
 }
-
