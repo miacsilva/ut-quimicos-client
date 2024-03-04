@@ -770,7 +770,7 @@ body {
 
   .productsImg1 {
     min-height: 50svh;
-    background-position: -90vw;
+/*  background-position: -90vw; */
     background-attachment: scroll;
   }
 
