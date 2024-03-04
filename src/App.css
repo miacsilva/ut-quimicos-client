@@ -594,7 +594,7 @@ body {
   opacity: 0.85;
   background-position: 0rem;
   background-repeat: no-repeat;
-/*   background-attachment: fixed; */
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
