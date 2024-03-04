@@ -139,6 +139,7 @@ body {
 }
 
 @media (max-width: 950px) {
+  
   .toggle-button {
     display: flex;
   }
@@ -594,7 +595,7 @@ body {
   opacity: 0.85;
   background-position: 0rem;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -789,7 +790,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-attachment: scroll;
 }
 
 
