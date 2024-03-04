@@ -67,7 +67,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*  background-image: url("/footerBg.png"); */
   background-color: transparent;
   position: absolute;
   z-index: 40;
@@ -593,22 +592,24 @@ body {
 .productsImg8 {
   position: relative;
   opacity: 0.85;
-  background-position: 0rem;
-  background-repeat: no-repeat;
+  background-position: 0rem; 
+/*   background-repeat: no-repeat;  */
   background-attachment: fixed;
-  display: flex;
+/*   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .productsImg1 {
-  background-image: url("/tubosDeEnsaio.jpg");
+  background-image: url("/tubosDeEnsaio.jpg") ;
   min-height: 100vh;
-  background-size: cover;
+  background-size: cover; 
 }
 .productsImg2 {
-  background-image: url("/Brochura.jpg");
+  background: url("/Brochura.jpg") no-repeat center center fixed ;
   min-height: 40vh;
   background-size: cover;
+  -webkit-background-size: cover;
+  -prefix-background-size: cover;
 }
 .productsImg3 {
   background-image: url("/pigmentoPo.jpg");
@@ -787,10 +788,10 @@ body {
 .productsImg8{
   min-height: 25vh;
   display: flex;
-  flex-direction: column;
+/*   flex-direction: column; */
   justify-content: center;
   align-items: center;
-  background-attachment: scroll;
+ /*  background-attachment: scroll; */
 }
 
 
