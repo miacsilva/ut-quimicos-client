@@ -593,11 +593,11 @@ body {
   position: relative;
   opacity: 0.85;
   background-position: 0rem; 
-/*   background-repeat: no-repeat;  */
+  background-repeat: no-repeat; 
   background-attachment: fixed;
-/*   display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 .productsImg1 {
   background-image: url("/tubosDeEnsaio.jpg") ;
@@ -605,7 +605,7 @@ body {
   background-size: cover; 
 }
 .productsImg2 {
-  background: url("/Brochura.jpg") no-repeat center center fixed ;
+  background-image: url("/Brochura.jpg") ;
   min-height: 40vh;
   background-size: cover;
   -webkit-background-size: cover;
@@ -788,13 +788,10 @@ body {
 .productsImg8{
   min-height: 25vh;
   display: flex;
-/*   flex-direction: column; */
   justify-content: center;
   align-items: center;
- /*  background-attachment: scroll; */
+  background-attachment: scroll;
 }
-
-
 }
 
 /* ---- Produtos Parallax efexr--END----------*/
