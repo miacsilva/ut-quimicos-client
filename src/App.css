@@ -594,7 +594,7 @@ body {
   opacity: 0.85;
   background-position: 0rem;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+/*   background-attachment: fixed; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -674,6 +674,7 @@ body {
   background-size: cover;
   color: rgba(93, 193, 224, 0.503);
   padding: 2vw 0vw 2vw;
+  text-align: center;
 }
 
 .productsText {

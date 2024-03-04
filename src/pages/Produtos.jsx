@@ -7,11 +7,10 @@ function Produtos() {
   return (
     <>
 <ScrollBackUp/>
-            <div className="Produtos">
-
+    <div className="Produtos">
       <div className="productsImg1">
         <div className="productsText">
-        <ScrollReveal> <span className="border3">Produtos</span></ScrollReveal>
+          <ScrollReveal> <span className="border3">Produtos</span></ScrollReveal>
         </div>
         <h5 className="scrollDown">Scroll Down</h5>
       </div>
@@ -25,19 +24,13 @@ function Produtos() {
 
       <div className="productsImg2">
         <div className="productsText">
-        <ScrollReveal  delay={300}>
-
-          <span id="transp"> <a href="/produtos/tintas-vernizes" className="anchor border2">Tintas e Vernizes</a> </span>
-        </ScrollReveal>
+          <ScrollReveal  delay={300}>
+            <span id="transp"> <a href="/produtos/tintas-vernizes" className="anchor border2">Tintas e Vernizes</a> </span>
+          </ScrollReveal>
         </div>
       </div>
 
-      <section className="sectionP section-dark">
-        
-        <h2></h2>
-        <p>
-          
-        </p>
+      <section className="section-dark">
       </section>
 
       <div className="productsImg4">
@@ -48,110 +41,71 @@ function Produtos() {
         </div>
       </div>
 
-      <section className="sectionP section-dark">
-        <h2>  </h2>
-        <p>
-          
-        </p>
+      <section className="section-dark">
       </section>
 
       <div className="productsImg3">
         <div className="productsText">
-
-        <ScrollReveal delay={300}>
-          <span id="transp"><a href="/produtos/plasticos" className="anchor border2">  Plásticos </a></span>
+          <ScrollReveal delay={300}>
+            <span id="transp"><a href="/produtos/plasticos" className="anchor border2">  Plásticos </a></span>
           </ScrollReveal>
-
         </div>
       </div>
 
       <section className="sectionP section-dark">
-        <h2> </h2>
-        <p>
-          
-        </p>
       </section>
 
 
       <div className="productsImg5">
         <div className="productsText">
-
-        <ScrollReveal delay={300}>
-          <span id="transp"><a href="/produtos/papel" className="anchor border2">Papel</a></span>
+          <ScrollReveal delay={300}>
+            <span id="transp"><a href="/produtos/papel" className="anchor border2">Papel</a></span>
           </ScrollReveal>
-
         </div>
       </div>
 
       <section className="section section-dark">
-        <h2> </h2>
-        <p>
-          
-        </p>
       </section>
-
 
       <div className="productsImg6">
         <div className="productsText">
-
-        <ScrollReveal delay={300}>
-          <span><a href="/produtos/cortica-compositos" className=" border2">Cortiça e Compósitos</a></span>
+          <ScrollReveal delay={300}>
+            <span><a href="/produtos/cortica-compositos" className="border2">Cortiça e Compósitos</a></span>
           </ScrollReveal>
         </div>
       </div>
 
       <section className="section section-dark">
-        <h2>  </h2>
-        <p>
-          
-        </p>
       </section>
-
 
       <div className="productsImg7">
         <div className="productsText">
-
-        <ScrollReveal delay={300}>
-          <a href="/produtos/detergentes-cosmetica" className=" border2">Detergentes e Cosmética</a>
+          <ScrollReveal delay={300}>
+            <a href="/produtos/detergentes-cosmetica" className=" border2">Detergentes e Cosmética</a>
           </ScrollReveal>
-        
         </div>
       </div>
 
       <section className="section section-dark">
-        <h2> </h2>
-        <p>
-          
-        </p>
       </section>
-
 
       <div className="productsImg8">
         <div className="productsText">
-
-        <ScrollReveal delay={300}>
-          <span  ><a href="/produtos/outras-industrias" className="border2">Outras Indústrias</a></span>
+          <ScrollReveal delay={300}>
+            <span  ><a href="/produtos/outras-industrias" className="border2">Outras Indústrias</a></span>
           </ScrollReveal>
-
         </div>
       </div>
 
       <section className="section section-dark">
-        <h2> </h2>
-        <p>
-         
-        </p>
       </section>
-
 
       <div className="productsImg1">
         <div className="productsText">
           <span className="border3">Produtos</span>
         </div>
       </div>
-
-
-      </div>
+    </div>
     </>
   );
 }
