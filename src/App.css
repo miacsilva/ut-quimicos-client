@@ -460,7 +460,9 @@ body {
   .secHomeContainerImageText {
     display: flex;
     flex-direction: column;
-  }
+    padding-bottom: 10vw;
+    gap:0px;
+    }
 
   .produtosSquare h2,
   .contactosSquare h2 {
@@ -480,7 +482,6 @@ body {
     height: 140vw;
     display: flex;
     flex-direction: column;
-    margin-top: 10vw;
   }
   .produtosSquare,
   .contactosSquare {
@@ -528,6 +529,7 @@ body {
     text-align: center;
     position: relative;
     bottom: -8vw;
+    background-color: transparent;
   }
 
   .iconAndText {

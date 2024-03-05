@@ -16,7 +16,7 @@ function Sobre() {
             <p className="sobreTexto"> Devido à exigência técnica do setor químico, na UTQ acompanhamos continuamente as inovações da área para propormos e oferecermos a cada cliente as soluções mais adequadas para otimização dos seus processos produtivos. </p>
             <p className="sobreTexto">Continuamos a procurar crescer no setor como uma empresa de referência, quer num incremento do nosso portólio, quer na qualidade dos serviços prestados.</p>
           </div>
-          <img src="/public/moleculas.png" alt="Imagem de moleculas" className="moleculasImg"/>
+          <img src="/moleculas.png" alt="Imagem de moleculas" className="moleculasImg"/>
         </div>
         <div className="sobreBtnCont">
           <Link to="/produtos" className="link-underline"><button className="goSomewhereButton sobreBtns">PRODUTOS</button></Link>

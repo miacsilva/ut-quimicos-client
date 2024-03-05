@@ -87,7 +87,6 @@ function Home() {
                 <img src={produtosImage} alt="ir para produtos"/>
               </div>
             </Link>
-
             <Link to="/contactos" className="produtosSquare">
               <div className="contactosSquare">
                 <h2> Contacte-nos</h2>
