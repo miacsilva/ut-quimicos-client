@@ -268,21 +268,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /*   background-attachment: fixed; */
-  background-image: linear-gradient(
-    to right top,
-    #e8eaec,
-    #e1e8ee,
-    #d9e6f0,
-    #d1e5f1,
-    #c8e3f2,
-    #bce0f1,
-    #afdcef,
-    #a2d9ec,
-    #8ed3e7,
-    #79cde1,
-    #61c7da,
-    #44c1d2
-  );
+  background-image: url("/footerBg.png");
+  background-size: cover;
 }
 
 .fadeTransition {
@@ -316,7 +303,7 @@ body {
   margin-top: 70px;
   line-height: 40px;
   text-align: center;
-  color: #243b55;
+  color: #ffffff;
   padding: 60px 60px 60px 60px;
   font-family: "Roboto", sans-serif;
 }
@@ -337,7 +324,7 @@ body {
 .bannerHomePage h2 {
   padding: 30px;
   border-radius: 10px;
-  text-align: center;
+  text-align: cen;
 }
 
 .secHomeContainerImageText {
@@ -358,7 +345,17 @@ body {
   align-self: center;
   margin: 8vw 0;
   text-align: left;
+  color:ffffffe2;
 }
+
+.iconAndText img {
+  filter: invert(100%);
+}
+
+.iconAndText h4{
+  color: #ffffffe2;
+}
+
 
 .lastBannerHomePage {
   height: 30vw;
@@ -508,7 +505,7 @@ body {
     margin-top: 30px;
     line-height: 30px;
     text-align: center;
-    color: #243b55;
+    color: #ffffff;
     padding: 50px 50px 50px 50px;
   }
 
@@ -541,13 +538,11 @@ body {
   }
 
   .iconAndText h4 {
-    color: #243b55;
     width: 40vw;
     font-size: 3.5vw;
   }
   .iconAndText img {
     width: 10vw;
-    filter: invert(10%);
   }
 }
 
@@ -1014,12 +1009,12 @@ body {
   justify-content: space-between;
 }
 .moleculasImg {
-  height: clamp(18.75rem, 17.3077rem + 3.8462vw, 21.875rem);
+  height: 300px;
   filter: brightness(100);
 }
 
 #sobre section h3 {
-  font-size: 2vw;
+  font-size: 24px;
   letter-spacing: 7px;
   margin-bottom: 5vw;
   color: #ffffff;
@@ -1046,6 +1041,12 @@ body {
   display: none;
 }
 
+@media (max-width: 1000px) {
+  .moleculasImg {
+    height: 250px;
+  }
+}
+
 @media (max-width: 600px) {
   #sobre header {
     background-position: -350px;
@@ -1062,16 +1063,17 @@ body {
   }
 
   #sobre section h3 {
-    font-size: 6vw;
+    font-size: 20px;
     letter-spacing: 8px;
     margin-bottom: 6vw;
   }
 
   .sobreTexto {
     white-space: pre-wrap;
-    font-size: 4vw;
+    font-size: 16px;
     letter-spacing: 2px;
     width: 68vw;
+    margin-top: 20px;
   }
 
   .sobreBtnCont {
@@ -1116,9 +1118,10 @@ header h1 {
   flex-direction: column;
   align-items: center;
   background: rgb(255, 255, 255);
-  background-image: url(/backgroundNovo.png);
+  background-image: url("/footerBg.png");
   background-size: cover;
   background-attachment: fixed;
+  font-family: "Roboto", "Verdana";
 }
 
 #parceiros header {
@@ -1156,9 +1159,9 @@ header h1 {
 }
 
 .logo-container {
-  background: rgba(243, 245, 247, 0.171);
+  background: rgba(243, 245, 247, 0.721);
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   padding: 8%;
@@ -1166,7 +1169,6 @@ header h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
-  margin-bottom: 7%;
   color: rgba(22, 45, 60, 0.925);
   font-family: "Roboto";
   backdrop-filter: blur(4px);
@@ -1192,16 +1194,26 @@ header h1 {
   width: 250px;
   margin: 15px 15px;
   object-fit: contain;
-  filter: grayscale(100%);
-  transition: 0.4s transform ease-in;
+  filter: grayscale(100%) brightness(0.4);
+  transition: 0.2s transform ease-in;
 }
 .parceiros-logo:hover {
   filter: grayscale(0%);
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
-
+.teste{
+  width: 250px;
+}
 .ecopower {
   width: 100px;
+}
+
+.parceirosBtnContDesk {
+  align-items: center;
+  justify-content: right;
+  padding-top: 0px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 600px) {
@@ -1216,12 +1228,20 @@ header h1 {
   }
 
   .logo-container {
-    background: rgba(214, 229, 238, 0.915);
+    background-image: url("/footerBg.png");
+   background-size: cover;
     border-radius: 0px;
     padding: 8%;
     width: 100%;
     margin: 0;
-    color: rgba(22, 45, 60, 0.925);
+    color: #ffffffe2;
+    border: 0;
+  }
+
+  .partnersImagesCont {
+    background: rgba(243, 245, 247, 0.589);
+    border-radius: 10px;
+    margin-bottom: 30px;
   }
 
   .logo-container h3 {
@@ -1229,7 +1249,7 @@ header h1 {
     font-size: 17px;
     line-height: 25px;
     letter-spacing: 1px;
-    margin: 15px 0;
+    margin: 15px 0 40px 0;
     padding: 4.5vw 0vw;
     text-align: center;
   }
@@ -1254,10 +1274,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(214, 229, 235);
-    background-color: (214, 229, 238, 0.915);
+    background-image: url("/footerBg.png");
     background-size: cover;
-    background-attachment: fixed;
   }
   .partnersImagesCont {
     padding-bottom: 20px;
@@ -1405,7 +1423,7 @@ header h1 {
   }
 
   .contactosTexto p {
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 4px;
   }
 
@@ -1742,7 +1760,6 @@ p .footerLinksColunas {
   letter-spacing: 0.4vw;
   font-size: clamp(20px, 1.2vw, 30px);
   border-radius: 5px;
-  background-color: #e5e6e8;
   color: #162d3b;
   -webkit-box-shadow: 8px 6px 10px 0px rgba(2, 36, 53, 1);
   -moz-box-shadow: 8px 6px 10px 0px rgba(2, 36, 53, 1);
@@ -1752,9 +1769,8 @@ p .footerLinksColunas {
   color: #e5e6e8;
 }
 
-.sobreBtnMobile {
-  background-color: #50b3f0c4;
-  color: #04090b;
+.sobreBtnDesktop {
+  background-color: #79cde1;
 }
 
 @media (min-width: 601px) and (max-width: 850px) {
@@ -1769,16 +1785,17 @@ p .footerLinksColunas {
   }
 
   .sobreBtns {
+    font-family: "Roboto", "Verdana";
     width: 70vw;
     margin-bottom: 3vw;
-    letter-spacing: 1.8vw;
-    font-size: 4vw;
+    letter-spacing: 7px;
+    font-size: 14px;
     padding: 4vw;
     border-radius: 3px;
   }
   .sobreBtnMobile {
-    background-color: #50b3f0c4;
-    color: #04090b;
+    background-color: #4292cf;
+    color: #fdfeff;
     border-radius: 10px;
   }
 }
@@ -1791,3 +1808,8 @@ a.anchorFooter {
   text-decoration: none;
   color: #538dc7;
 }
+/* 
+.parceirosBtn{
+  
+  font-size: 14px;
+} */

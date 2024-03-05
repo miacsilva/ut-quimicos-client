@@ -22,9 +22,9 @@ function Sobre() {
             </div>
           </div>
         </div>
-        <div className="sobreBtnContDesk">
-          <Link to="/produtos" className="link-underline"><button className="goSomewhereButton sobreBtns">PRODUTOS</button></Link>
-          <Link to="/contactos" className="link-underline"><button className="goSomewhereButton  sobreBtns">CONTACTE-NOS</button></Link>
+        <div className="sobreBtnContDesk parceirosBtnContDesk">
+          <Link to="/produtos" className="link-underline"><button className="goSomewhereButton sobreBtns sobreBtnDesktop parceirosBtn">PRODUTOS</button></Link>
+          <Link to="/contactos" className="link-underline"><button className="goSomewhereButton  sobreBtns sobreBtnDesktop parceirosBtn">CONTACTE-NOS</button></Link>
         </div>
       </section>
       <div className="sobreBtnContMobile">

@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-/* import jars from "/garrafasColoridasSemBGquadrado.png"; */
 import ScrollReveal from "/src/containers/ScrollReveal";
 import group from "/group-icon.png";
 import handshake from "/handshake-icon.png";
