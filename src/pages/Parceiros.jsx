@@ -70,13 +70,15 @@ function Parceiros() {
               />
             </div>
           </div>
-
-          
         </div>
       </section>
 
-<Link to="/contactos" className="link-underline"><button className="goSomewhereButton partnersBtn">CONTACTE-NOS</button></Link>
+      <Link to="/contactos" className="link-underline"><button className="goSomewhereButton partnersBtn">CONTACTE-NOS</button></Link>
 
+      <div className="sobreBtnContMobile">
+          <Link to="/produtos" className="link-underline"><button className="goSomewhereButton sobreBtns sobreBtnMobile">PRODUTOS</button></Link>
+          <Link to="/contactos" className="link-underline"><button className="goSomewhereButton  sobreBtns sobreBtnMobile">CONTACTE-NOS</button></Link>
+      </div>
 <ScrollRestoration/>
 
     </div>

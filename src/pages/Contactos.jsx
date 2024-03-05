@@ -3,69 +3,86 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsFillHouseFill } from "react-icons/bs";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import ScrollReveal from "/src/containers/ScrollReveal";
-import ScrollBackUp from "../components/ScrollBackUp"
-
-
-
+import ScrollBackUp from "../components/ScrollBackUp";
 
 function Contactos() {
   return (
     <div id="contactos">
-    <ScrollBackUp/>
+      <ScrollBackUp />
       <header>
         <h2>Contacte-nos</h2>
       </header>
-      <section >
-        <div className="contactosHardCoded">  
+      <section>
+        <div className="contactosHardCoded">
           <div className="contactosTexto">
             <div className="contactosTextoGroup">
               <h5>Sede / Escritório</h5>
-              <p><BsFillHouseFill/>  Travessa do Outeirinho, n.º 42 e 104</p>
-              <p>     Apartado 139</p>
-              <p>     4730-794 Vila Verde</p>
-              <p className="marginContacts"><BsFillTelephoneFill/> +351 253 324 533 (Chamada para a rede fixa nacional)</p>
-              <p className="marginContacts"><BsEnvelopeAtFill/> geral@utquimicos.com</p>
-           </div>
+              <p>
+                <BsFillHouseFill /> Travessa do Outeirinho, n.º 42 e 104
+              </p>
+              <p>Apartado 139</p>
+              <p>4730-794 Vila Verde</p>
+              <p className="marginContacts">
+                <BsFillTelephoneFill />
+                <a href="tel:+351253324533" className="link-underline-number">
+                  {" "}
+                  +351 253 324 533
+                </a>
+              </p>
+              <p>*Chamada para a rede fixa nacional</p>
+              <p className="marginContacts">
+                <BsEnvelopeAtFill /> geral@utquimicos.com
+              </p>
+            </div>
 
-          <div className="contactosTextoGroup">
-            <h5>Armazém</h5>
-            <p><BsFillHouseFill/>   Rua António Joaquim Campos Monteiro, nº 700</p>
-            <p>      4780-165 Santo Tirso</p>
-            <p  className="marginContacts"><BsFillTelephoneFill/> +351 252 219 985 (Chamada para a rede fixa nacional)</p>
+            <div className="contactosTextoGroup">
+              <h5>Armazém</h5>
+              <p>
+                <BsFillHouseFill /> Rua António Joaquim Campos Monteiro, nº 700
+              </p>
+              <p> 4780-165 Santo Tirso</p>
+              <p className="marginContacts">
+                <BsFillTelephoneFill />
+                <a href="tel:+351252219985" className="link-underline-number">
+                  {" "}
+                  +351 252 219 985
+                </a>
+              </p>
+              <p>*Chamada para a rede fixa nacional</p>
             </div>
           </div>
           <ScrollReveal delay={300}>
-          <div className="maps">
-            <div className="officeMap">
-             {/*  <h5>Escritório</h5> */}
-              <iframe
-                title="Google Maps"
-                width="350"
-                height="350"
-                src="https://maps.google.com/maps?q=travessa%20do%20outeirinho,%20n%C2%BA104&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                style={{ border: 0 }}
-                allowFullScreen
-              />
-            </div>
+            <div className="maps">
+              <div className="officeMap">
+                {/*  <h5>Escritório</h5> */}
+                <iframe
+                  title="Google Maps"
+                  width="350"
+                  height="350"
+                  src="https://maps.google.com/maps?q=travessa%20do%20outeirinho,%20n%C2%BA104&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                />
+              </div>
 
-            <div className="warehouseMap">
-            {/*   <h5>Armazém</h5> */}
-              <iframe
-                width="350"
-                height="350"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=rua%20ant%C3%B3nio%20Joaquim%20campos%20Monteiro,%20n%C2%BA700&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                style={{ border: 0 }}
-                allowFullScreen
-              ></iframe>
+              <div className="warehouseMap">
+                {/*   <h5>Armazém</h5> */}
+                <iframe
+                  width="350"
+                  height="350"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=rua%20ant%C3%B3nio%20Joaquim%20campos%20Monteiro,%20n%C2%BA700&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
         </div>
       </section>
-        <div className="Formulário">
-          <ContactForm />
-        </div>
+      <div className="Formulário">
+        <ContactForm />
+      </div>
     </div>
   );
 }

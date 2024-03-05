@@ -1,4 +1,4 @@
-/* Import all of Bootstrap's CSS */
+/* Import all of Bootstrap's SS */
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,500&display=swap");
@@ -311,7 +311,7 @@ body {
 }
 
 .secHomeContainerContent h3 {
-  font-size: 2.9em;
+  font-size: clamp(1.25rem, 1.1058rem + 0.3846vw, 1.5625rem);
   margin: 10vw 10vw 0vw 10vw;
   margin-top: 70px;
   line-height: 40px;
@@ -325,7 +325,7 @@ body {
   background-image: url(/poCoresCroppedDark.jpg);
   background-position-y: -20px;
   background-attachment: fixed;
-  height: 180px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,9 +335,9 @@ body {
 }
 
 .bannerHomePage h2 {
-  background-color: #1b1c1d93;
   padding: 30px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .secHomeContainerImageText {
@@ -461,8 +461,8 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 10vw;
-    gap:0px;
-    }
+    gap: 0px;
+  }
 
   .produtosSquare h2,
   .contactosSquare h2 {
@@ -1005,47 +1005,35 @@ body {
 #sobre section {
   width: 100vw;
   padding: 8vw 10vw 6vw 10vw;
-  background-image: linear-gradient(
-    to left bottom,
-    #dde5eb,
-    #cedfeb,
-    #bfd9ea,
-    #aed4e9,
-    #9ccee8,
-    #8abdd8,
-    #77adc8,
-    #659db8,
-    #507f97,
-    #3c6277,
-    #294758,
-    #162d3b
-  );
+  background-image: url("/footerBg.png");
+  background-size: cover;
 }
 
-.sobreTextContainer {
+.companyContainer {
   display: flex;
   justify-content: space-between;
 }
 .moleculasImg {
-  height: 350px;
+  height: clamp(18.75rem, 17.3077rem + 3.8462vw, 21.875rem);
+  filter: brightness(100);
 }
 
 #sobre section h3 {
   font-size: 2vw;
   letter-spacing: 7px;
   margin-bottom: 5vw;
-  color: #162d3b;
+  color: #ffffff;
 }
 
 .sobreTexto {
   white-space: pre-wrap;
-  font-size: clamp(18px, 1.2vw, 25px);
+  font-size: clamp(16px, 1vw + 1px, 22px);
   letter-spacing: 2px;
   width: 50vw;
   color: #ffffffe2;
 }
 
-.sobreBtnCont {
+.sobreBtnContDesk {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1054,7 +1042,15 @@ body {
   padding-top: 100px;
 }
 
+.sobreBtnContMobile {
+  display: none;
+}
+
 @media (max-width: 600px) {
+  #sobre header {
+    background-position: -350px;
+  }
+
   #sobre h2 {
     font-size: 6svw;
     padding: 4%;
@@ -1080,6 +1076,24 @@ body {
 
   .sobreBtnCont {
     margin-bottom: 10vw;
+  }
+
+  .moleculasImg {
+    display: none;
+  }
+  .sobreBtnContDesk {
+    display: none;
+  }
+  .sobreBtnContMobile {
+    display: block;
+    background-image: url(/public/poCoresCropped.jpg);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
   }
 }
 
@@ -1245,6 +1259,9 @@ header h1 {
     background-size: cover;
     background-attachment: fixed;
   }
+  .partnersImagesCont {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1264,21 +1281,8 @@ header h1 {
 }
 
 .contactosHardCoded {
-  background-image: linear-gradient(
-    to left bottom,
-    #dde5eb,
-    #cedfeb,
-    #bfd9ea,
-    #aed4e9,
-    #9ccee8,
-    #8abdd8,
-    #77adc8,
-    #659db8,
-    #507f97,
-    #3c6277,
-    #294758,
-    #162d3b
-  );
+  background-image: url("/footerBg.png");
+  background-size: cover;
 }
 #contactos header {
   width: 100svw;
@@ -1324,18 +1328,9 @@ header h1 {
   width: 100%;
   aspect-ratio: 16/9;
   max-width: 350px;
-  box-shadow: 10px 12px 10px 2px #94c4e478;
+  box-shadow: 10px 12px 10px #94c4e478;
 }
-/* 
-.maps h5 {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 5px;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 40px;
-  text-align: center;
-}
- */
+
 .contactosTexto {
   border-radius: 15px;
   display: flex;
@@ -1346,13 +1341,13 @@ header h1 {
   margin-right: auto;
   padding-top: 7%;
   margin-bottom: 7%;
-  color: rgba(22, 45, 60, 0.925);
+  color: rgb(253, 253, 253);
 }
 
 .contactosTexto h5 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 5px;
-  font-size: 30px;
+  font-size: clamp(1.25rem, 1.0481rem + 0.5385vw, 1.6875rem);
   margin-bottom: 40px;
   /* font-weight: bolder; */
 }
@@ -1361,6 +1356,7 @@ header h1 {
   font-size: 15px;
   margin-bottom: 7px;
   font-family: "Roboto", sans-serif;
+  color: rgba(253, 253, 253, 0.756);
 }
 
 .contactosTextoGroup {
@@ -1369,6 +1365,11 @@ header h1 {
 
 .marginContacts {
   margin-top: 30px;
+}
+
+.link-underline-number {
+  text-decoration: none;
+  color: rgba(253, 253, 253, 0.756);
 }
 
 @media (max-width: 600px) {
@@ -1387,9 +1388,11 @@ header h1 {
   }
 
   .contactosTextoGroup {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vw;
   }
 
   #contactos header {
@@ -1397,17 +1400,21 @@ header h1 {
   }
 
   .contactosTexto h5 {
-    color: rgba(22, 45, 60, 0.74);
-    font-size: 6vw;
+    color: white;
+    font-size: min(6vw, 25px);
   }
 
   .contactosTexto p {
-    font-size: 15px;
-    margin-bottom: 7px;
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .marginContacts {
+    margin-top: 20px;
   }
 
   .maps {
-    margin: 40px 0;
+    padding: 30px 0;
   }
 
   .maps h5 {
@@ -1420,7 +1427,7 @@ header h1 {
     margin-top: 0px;
     margin-bottom: 15vw;
     width: 80vw;
-    height: 80vw;
+    height: 75vw;
     aspect-ratio: 16/9;
     max-width: 350px;
     box-shadow: 10px 12px 10px 2px #94c4e478;
@@ -1745,6 +1752,11 @@ p .footerLinksColunas {
   color: #e5e6e8;
 }
 
+.sobreBtnMobile {
+  background-color: #50b3f0c4;
+  color: #04090b;
+}
+
 @media (min-width: 601px) and (max-width: 850px) {
   .partnersBtn {
     margin: 30px 0 50px 0;
@@ -1753,11 +1765,7 @@ p .footerLinksColunas {
 
 @media (max-width: 600px) {
   .partnersBtn {
-    width: 70vw;
-    height: 10vw;
-    font-size: 3.5vw;
-    letter-spacing: 1.8vw;
-    margin: 40px 0 80px 0;
+    display: none;
   }
 
   .sobreBtns {
@@ -1767,6 +1775,11 @@ p .footerLinksColunas {
     font-size: 4vw;
     padding: 4vw;
     border-radius: 3px;
+  }
+  .sobreBtnMobile {
+    background-color: #50b3f0c4;
+    color: #04090b;
+    border-radius: 10px;
   }
 }
 

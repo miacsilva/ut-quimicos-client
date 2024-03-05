@@ -41,7 +41,7 @@ function Home() {
             transformadora
           </h3>
           <div className="bannerHomePage">
-              <h2>A nossa equipa experiente e dinâmica procura de forma
+              <h2>A nossa equipa experiente e dinâmica <br></br> procura de forma
                  contínua:
               </h2>
           </div>
