@@ -31,7 +31,7 @@ function Contactos() {
               </p>
               <p>*Chamada para a rede fixa nacional</p>
               <p className="marginContacts">
-                <BsEnvelopeAtFill /> geral@utquimicos.com
+                <BsEnvelopeAtFill /> <a href="mailto:geral@utquimicos.com" className="link-underline-number">geral@utquimicos.com</a>
               </p>
             </div>
 
