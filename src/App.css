@@ -268,6 +268,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /*   background-attachment: fixed; */
+  background-image: linear-gradient(
+    to right top,
+    #e8eaec,
+    #e1e8ee,
+    #d9e6f0,
+    #d1e5f1,
+    #c8e3f2,
+    #bce0f1,
+    #afdcef,
+    #a2d9ec,
+    #8ed3e7,
+    #79cde1,
+    #61c7da,
+    #44c1d2
+  );
 }
 
 .fadeTransition {
@@ -310,7 +325,7 @@ body {
   background-image: url(/poCoresCroppedDark.jpg);
   background-position-y: -20px;
   background-attachment: fixed;
-  height: 7vw;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,10 +334,17 @@ body {
   color: #eaebed;
 }
 
+.bannerHomePage h2 {
+  background-color: #1b1c1d93;
+  padding: 30px;
+  border-radius: 10px;
+}
+
 .secHomeContainerImageText {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 50px;
 }
 
 .colormix {
@@ -497,6 +519,7 @@ body {
   .bannerHomePage {
     height: 35vw;
     text-align: center;
+    background-attachment: scroll;
   }
 
   .bannerHomePage h2 {
@@ -770,7 +793,7 @@ body {
 
   .productsImg1 {
     min-height: 50svh;
-/*  background-position: -90vw; */
+    /*  background-position: -90vw; */
     background-attachment: scroll;
   }
 
@@ -979,7 +1002,30 @@ body {
 
 #sobre section {
   width: 100vw;
-  padding: 10vw 10vw 10vw 10vw;
+  padding: 8vw 10vw 6vw 10vw;
+  background-image: linear-gradient(
+    to left bottom,
+    #dde5eb,
+    #cedfeb,
+    #bfd9ea,
+    #aed4e9,
+    #9ccee8,
+    #8abdd8,
+    #77adc8,
+    #659db8,
+    #507f97,
+    #3c6277,
+    #294758,
+    #162d3b
+  );
+}
+
+.sobreTextContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.moleculasImg {
+  height: 350px;
 }
 
 #sobre section h3 {
@@ -994,11 +1040,16 @@ body {
   font-size: clamp(18px, 1.2vw, 25px);
   letter-spacing: 2px;
   width: 50vw;
-  color: #162d3be2;
+  color: #ffffffe2;
 }
 
 .sobreBtnCont {
-  margin-bottom: 5vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: right;
+  padding-top: 100px;
 }
 
 @media (max-width: 600px) {
@@ -1073,7 +1124,7 @@ header h1 {
   z-index: 1;
   margin-top: -30px;
   text-align: center;
-  background-color: rgba(22, 45, 59, 0.912);
+  background-color: rgba(22, 45, 59, 0.914);
   color: white;
   text-shadow: 1.25px 1.25px 0px rgba(3, 4, 4, 0.636);
   padding: 1.5%;
@@ -1107,7 +1158,7 @@ header h1 {
 
 .logo-container h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
-  font-size: 1.5vw;
+  font-size: clamp(0.9375rem, 0.7356rem + 0.5385vw, 1.375rem);
   letter-spacing: 1px;
   margin-bottom: 5vw;
   padding: 0 15vw;
@@ -1194,6 +1245,12 @@ header h1 {
   }
 }
 
+@media (max-width: 450px) {
+  #parceiros header {
+    background-position-x: -420px;
+  }
+}
+
 /* ---------------Parceiros END--------------- */
 
 /* -------------Contactos------------------- */
@@ -1204,6 +1261,23 @@ header h1 {
   background-attachment: fixed;
 }
 
+.contactosHardCoded {
+  background-image: linear-gradient(
+    to left bottom,
+    #dde5eb,
+    #cedfeb,
+    #bfd9ea,
+    #aed4e9,
+    #9ccee8,
+    #8abdd8,
+    #77adc8,
+    #659db8,
+    #507f97,
+    #3c6277,
+    #294758,
+    #162d3b
+  );
+}
 #contactos header {
   width: 100svw;
   max-height: 40vh;
@@ -1238,6 +1312,7 @@ header h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   color: #162d3b;
+  padding-bottom: 6%;
 }
 
 .maps iframe {
@@ -1261,15 +1336,13 @@ header h1 {
  */
 .contactosTexto {
   border-radius: 15px;
-  /*   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
-  border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-around;
   padding: 40px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7%;
+  padding-top: 7%;
   margin-bottom: 7%;
   color: rgba(22, 45, 60, 0.925);
 }
@@ -1463,9 +1536,6 @@ p .footerLinksColunas {
 
 /* ---------Message Form------------ */
 
-.Formulário {
-  margin-top: 6%;
-}
 .containerForm {
   min-height: 90vh;
   min-width: 100vw;
@@ -1641,12 +1711,10 @@ p .footerLinksColunas {
 }
 
 .goSomewhereButton:hover {
-  background-color: rgba(34, 67, 90, 0.903);
-  transform: scale(1.05);
-  width: 30vw;
+  background-color: #22435a;
+  transform: scale(1.02);
   height: 3vw;
   letter-spacing: 0.4vw;
-  /*  font-size: 1.2vw; */
   border-radius: 5px;
 }
 
@@ -1659,12 +1727,20 @@ p .footerLinksColunas {
   border-radius: 5px;
 }
 .sobreBtns {
-  width: clamp(300px, 30vw, 500px);
+  width: clamp(300px, 30vw, 400px);
   height: clamp(40px, 3vw, 80px);
   margin-bottom: 1.5vw;
   letter-spacing: 0.4vw;
   font-size: clamp(20px, 1.2vw, 30px);
   border-radius: 5px;
+  background-color: #e5e6e8;
+  color: #162d3b;
+  -webkit-box-shadow: 8px 6px 10px 0px rgba(2, 36, 53, 1);
+  -moz-box-shadow: 8px 6px 10px 0px rgba(2, 36, 53, 1);
+  box-shadow: 8px 6px 10px 0px rgba(2, 36, 53, 1);
+}
+.sobreBtns:hover {
+  color: #e5e6e8;
 }
 
 @media (min-width: 601px) and (max-width: 850px) {

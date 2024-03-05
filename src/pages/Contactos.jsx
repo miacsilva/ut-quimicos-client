@@ -12,34 +12,20 @@ function Contactos() {
   return (
     <div id="contactos">
     <ScrollBackUp/>
-
-
       <header>
-
         <h2>Contacte-nos</h2>
       </header>
-
-
-
-
       <section >
-        <div className="contactosHardCoded">
-          
-          
+        <div className="contactosHardCoded">  
           <div className="contactosTexto">
-
-          <div className="contactosTextoGroup">
-            <h5>Sede / Escritório</h5>
-            <p><BsFillHouseFill/>  Travessa do Outeirinho, n.º 42 e 104</p>
-            <p>     Apartado 139</p>
-            <p>     4730-794 Vila Verde</p>
-            <p className="marginContacts"><BsFillTelephoneFill/> +351 253 324 533 (Chamada para a rede fixa nacional)</p>
-            <p className="marginContacts"><BsEnvelopeAtFill/> geral@utquimicos.com</p>
-            </div>
-
-            
-
-          
+            <div className="contactosTextoGroup">
+              <h5>Sede / Escritório</h5>
+              <p><BsFillHouseFill/>  Travessa do Outeirinho, n.º 42 e 104</p>
+              <p>     Apartado 139</p>
+              <p>     4730-794 Vila Verde</p>
+              <p className="marginContacts"><BsFillTelephoneFill/> +351 253 324 533 (Chamada para a rede fixa nacional)</p>
+              <p className="marginContacts"><BsEnvelopeAtFill/> geral@utquimicos.com</p>
+           </div>
 
           <div className="contactosTextoGroup">
             <h5>Armazém</h5>
@@ -47,15 +33,11 @@ function Contactos() {
             <p>      4780-165 Santo Tirso</p>
             <p  className="marginContacts"><BsFillTelephoneFill/> +351 252 219 985 (Chamada para a rede fixa nacional)</p>
             </div>
-
-
-
           </div>
           <ScrollReveal delay={300}>
           <div className="maps">
             <div className="officeMap">
              {/*  <h5>Escritório</h5> */}
-
               <iframe
                 title="Google Maps"
                 width="350"
@@ -68,7 +50,6 @@ function Contactos() {
 
             <div className="warehouseMap">
             {/*   <h5>Armazém</h5> */}
-
               <iframe
                 width="350"
                 height="350"
