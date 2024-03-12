@@ -108,7 +108,7 @@ function Parceiros() {
       </div>
       <div className="sobreBtnContMobile">
         <Link to="/produtos" className="link-underline">
-          <button className="goSomewhereButton sobreBtns sobreBtnMobile parceirosBtn">
+          <button className="goSomewhereButton sobreBtns sobreBtnMobile sobreBtnDesktop">
             PRODUTOS
           </button>
         </Link>

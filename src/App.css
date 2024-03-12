@@ -1041,6 +1041,8 @@ body {
   display: none;
 }
 
+
+
 @media (max-width: 1000px) {
   .moleculasImg {
     height: 250px;
@@ -1808,8 +1810,10 @@ a.anchorFooter {
   text-decoration: none;
   color: #538dc7;
 }
-/* 
-.parceirosBtn{
+
+@media (min-width:750px) {
+  .sobreButtons{
+    margin-top: 80px;
+  }
   
-  font-size: 14px;
-} */
+}
